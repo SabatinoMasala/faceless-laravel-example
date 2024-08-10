@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('status');
             $table->foreignId('story_id')->constrained();
+            $table->string('paragraph')->nullable();
+            $table->string('prompt')->nullable();
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Jobs\Parallel;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Bus;
@@ -24,8 +25,8 @@ Route::get('/brainstorm', function () {
         new \App\Jobs\GenerateVoiceOver($story),
         new \App\Jobs\TranscribeAudio($story),
         new \App\Jobs\ChunkTranscript($story),
-        // Creative direction
-        // Image generation
+        // TODO: Creative direction
+        new \App\Jobs\GenerateImages($story)
     ])->dispatch();
     return $story;
 });

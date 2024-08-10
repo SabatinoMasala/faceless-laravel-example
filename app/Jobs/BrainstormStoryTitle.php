@@ -6,10 +6,10 @@ use App\Models\Story;
 use App\Prompts\Brainstorm;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
-use SabatinoMasala\Replicate\Replicate;
 
-class BrainstormStoryTitle implements ShouldQueue
+class BrainstormStoryTitle extends MockableJob implements ShouldQueue
 {
+
     use Queueable;
 
     /**
@@ -19,10 +19,12 @@ class BrainstormStoryTitle implements ShouldQueue
         public Story $story
     ){}
 
-    /**
-     * Execute the job.
-     */
-    public function handle(): void
+    protected function shouldMock(): bool
+    {
+        return true;
+    }
+
+    protected function execute()
     {
         $prompt = new Brainstorm($this->story->language, $this->story->series);
         $prompt->addHistory([
@@ -33,9 +35,21 @@ class BrainstormStoryTitle implements ShouldQueue
             'max_tokens' => 1000,
         ]);
         $list = explode(PHP_EOL, collect($output)->join(''));
-        $randomIdea = $list[array_rand($list)];
+        return $list[array_rand($list)];
+    }
+
+    protected function mock()
+    {
+        return 'Veni Vidi Vici, the Conqueror\'s Cry';
+    }
+
+    /**
+     * Execute the job.
+     */
+    public function handle(): void
+    {
         $this->story->update([
-            'title' => $randomIdea
+            'title' => $this->handleOrMock(),
         ]);
     }
 }

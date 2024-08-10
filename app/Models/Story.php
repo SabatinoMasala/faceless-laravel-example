@@ -10,4 +10,9 @@ class Story extends BaseModel
         'voice_over_chunks' => 'json',
     ];
 
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
+
 }
