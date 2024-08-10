@@ -16,5 +16,17 @@
         "tailwindcss": "^3.2.1",
         "vite": "^5.0",
         "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "@vee-validate/zod": "^4.13.2",
+        "@vueuse/core": "^10.11.1",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "lucide-vue-next": "^0.427.0",
+        "radix-vue": "^1.9.3",
+        "tailwind-merge": "^2.4.0",
+        "tailwindcss-animate": "^1.0.7",
+        "vee-validate": "^4.13.2",
+        "zod": "^3.23.8"
     }
 }

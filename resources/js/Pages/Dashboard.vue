@@ -1,6 +1,24 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+import Button from "@/Components/ui/button/Button.vue";
+import {
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from '@/Components/ui/form'
+import { Input } from '@/components/ui/input'
+import {ref} from "vue";
+
+const onSubmit = () => {
+    alert(subject.value)
+};
+
+const subject = ref('');
+
 </script>
 
 <template>
@@ -14,7 +32,25 @@ import { Head } from '@inertiajs/vue3';
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">You're logged in!</div>
+                    <div class="p-6 text-gray-900">
+                        <form class="w-2/3 space-y-6" @submit.stop.prevent="onSubmit">
+                            <FormField name="subject">
+                                <FormItem>
+                                    <FormLabel>Subject</FormLabel>
+                                    <FormControl>
+                                        <Input type="text" placeholder="Eg. the roman empire" v-model="subject" />
+                                    </FormControl>
+                                    <FormDescription>
+                                        This is the subject of your video
+                                    </FormDescription>
+                                    <FormMessage />
+                                </FormItem>
+                            </FormField>
+                            <Button type="submit">
+                                Submit
+                            </Button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
