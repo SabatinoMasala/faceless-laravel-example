@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('voice_over_path')->nullable();
             $table->json('voice_over_transcription')->nullable();
             $table->json('voice_over_chunks')->nullable();
+            $table->longText('creative_direction')->nullable();
             $table->string('content')->nullable();
             $table->timestamps();
         });

@@ -33,7 +33,7 @@ class GenerateImages implements ShouldQueue
         });
         $callables = $this->story->images->map(function(Image $image) {
             return function () use ($image) {
-                $prompt = new DescribeScene($this->story->content, $image->paragraph);
+                $prompt = new DescribeScene($this->story->content, $image->paragraph, $this->story->creative_direction);
                 $tokens = app('replicate')->run('meta/meta-llama-3.1-405b-instruct', [
                     'prompt' => $prompt->get(),
                 ]);

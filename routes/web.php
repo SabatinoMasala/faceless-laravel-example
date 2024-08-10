@@ -25,7 +25,7 @@ Route::get('/brainstorm', function () {
         new \App\Jobs\GenerateVoiceOver($story),
         new \App\Jobs\TranscribeAudio($story),
         new \App\Jobs\ChunkTranscript($story),
-        // TODO: Creative direction
+        new \App\Jobs\CreativeDirection($story),
         new \App\Jobs\GenerateImages($story)
     ])->dispatch();
     return $story;
