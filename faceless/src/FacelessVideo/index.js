@@ -1,4 +1,4 @@
-import {AbsoluteFill, Audio, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, random, Audio, Img, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
 
 export const FacelessVideo = ({data}) => {
     const frame = useCurrentFrame();
@@ -19,9 +19,19 @@ export const FacelessVideo = ({data}) => {
         <AbsoluteFill style={{backgroundColor: 'white'}}>
             <Audio src={audio} />
             {frame}
-            {images.map((image, index) => <Sequence durationInFrames={image.durationInFrames} from={image.from}>
-                <Img src={image.src} />
-            </Sequence>)}
+            {images.map((image, index) => {
+                const startRotation = (random(index) * 10) - 5;
+                console.log(startRotation)
+                const scale = interpolate(frame, [image.from, image.from + image.durationInFrames], [1.4, 1.2], {
+                    extrapolateRight: 'clamp',
+                });
+                const rotation = interpolate(frame, [image.from, image.from + image.durationInFrames], [startRotation, 0], {
+                    extrapolateRight: 'clamp',
+                });
+                return <Sequence durationInFrames={image.durationInFrames} from={image.from} style={{transform: `scale(${scale}) rotate(${rotation}deg)`}}>
+                    <Img src={image.src} />
+                </Sequence>
+            })}
         </AbsoluteFill>
     );
 };
