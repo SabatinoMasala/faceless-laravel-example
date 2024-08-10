@@ -16,7 +16,7 @@ export const RemotionRoot = () => {
 				width={1080}
 				height={1920}
                 calculateMetadata={async ({ props }) => {
-                    const data = await fetch(`http://faceless-laravel-example.test/api/story/8`);
+                    const data = await fetch(`http://faceless-laravel-example.test/api/story/${props.id}`);
                     const json = await data.json();
                     return {
                         props: {
@@ -25,12 +25,6 @@ export const RemotionRoot = () => {
                         },
                     };
                 }}
-				// You can override these props for each render:
-				// https://www.remotion.dev/docs/parametrized-rendering
-				defaultProps={{
-					titleText: 'Welcome to Remotion',
-					titleColor: 'black',
-				}}
 			/>
 		</>
 	);
