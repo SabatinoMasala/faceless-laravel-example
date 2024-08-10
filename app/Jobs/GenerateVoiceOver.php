@@ -23,6 +23,7 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
      */
     public function handle(): void
     {
+        $this->handleOrMock();
         $this->story->update([
             'voice_over_path' => 'audio/story-' . $this->story->id . '.mp3'
         ]);
@@ -31,7 +32,7 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
     protected function mock()
     {
         // Simply copy the file from the storage to the public folder
-        Storage::copy('mocks/story-mock.mp3', 'public/audio/story-' . $this->story->id . '.mp3');
+        Storage::disk('public')->put('audio/story-' . $this->story->id . '.mp3', file_get_contents(storage_path('mocks/story-mock.mp3')));
     }
 
     protected function shouldMock(): bool
