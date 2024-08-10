@@ -30,7 +30,7 @@ abstract class BasePrompt
         return $string;
     }
 
-    public function prompt(): string
+    public function get(): string
     {
         $prompt = $this->getBasePrompt() . PHP_EOL . $this->getAdditionalPrompt();
         return $this->replaceVariables($prompt);
@@ -38,7 +38,7 @@ abstract class BasePrompt
 
     public function __toString()
     {
-        return $this->prompt();
+        return $this->get();
     }
 
 }

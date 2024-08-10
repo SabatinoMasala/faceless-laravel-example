@@ -10,10 +10,12 @@
         "laravel/framework": "^11.9",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
+        "openai-php/client": "^0.10.1",
         "sabatinomasala/replicate-php": "^1.1",
         "tightenco/ziggy": "^2.0"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^3.1",
         "fakerphp/faker": "^1.23",
         "laravel/breeze": "^2.1",
         "laravel/pint": "^1.13",

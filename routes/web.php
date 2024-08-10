@@ -1,22 +1,33 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Prompts\Brainstorm;
+use App\Models\Story;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+Route::get('/story/{story}', function(Story $story) {
+    return $story;
+});
+
 Route::get('/brainstorm', function () {
-    $brainstorm = new Brainstorm('English', 'Roman empire');
-    $brainstorm->addHistory([
-        'The story about julius caesar'
+    $story = \App\Models\Story::create([
+        'status' => 'PENDING',
+        'series' => 'Roman empire',
+        'language' => 'English'
     ]);
-    $replicate = new SabatinoMasala\Replicate\Replicate(env('REPLICATE_API_TOKEN'));
-    $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
-        'prompt' => $brainstorm->prompt(),
-        'max_tokens' => 1000,
-    ]);
-    dd(collect($output)->join(''));
+//    $story = \App\Models\Story::find(1);
+    Bus::chain([
+        new \App\Jobs\BrainstormStoryTitle($story),
+        new \App\Jobs\GenerateStory($story),
+        new \App\Jobs\GenerateVoiceOver($story),
+        new \App\Jobs\TranscribeAudio($story),
+        new \App\Jobs\ChunkTranscript($story),
+        // Creative direction
+        // Image generation
+    ])->dispatch();
+    return $story;
 });
 
 Route::get('/', function () {
