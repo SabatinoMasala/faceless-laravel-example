@@ -224,6 +224,13 @@
   resolved "https://registry.yarnpkg.com/@remotion/compositor-win32-x64-msvc/-/compositor-win32-x64-msvc-4.0.194.tgz#4b0185e44d7826f48166b9db0220982041f6419f"
   integrity sha512-q7DhqB6G/tvqW6JG9w836HXKLoN8FyNfxn5oEo0V1EEsWTFwgZrSxAJ17iepDQbBq7EKM7uFo/rTsX3Mg37k2Q==
 
+"@remotion/google-fonts@^4.0.194":
+  version "4.0.194"
+  resolved "https://registry.yarnpkg.com/@remotion/google-fonts/-/google-fonts-4.0.194.tgz#1dc91e22e78bf52419eedeff43f74b51d49af666"
+  integrity sha512-sAsGNOloga3Viy2g9Z8pFuCvh/1la/1P2xBLD538xzcWAiq0eCQrKEwx94SORa1ZZZi4ML+/mAH36Wo6Z5bgCg==
+  dependencies:
+    remotion "4.0.194"
+
 "@remotion/media-utils@4.0.194":
   version "4.0.194"
   resolved "https://registry.yarnpkg.com/@remotion/media-utils/-/media-utils-4.0.194.tgz#025c49fb393bd92cff31c4f490acf0fc63397478"

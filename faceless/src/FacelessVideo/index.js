@@ -1,4 +1,6 @@
 import {AbsoluteFill, interpolate, random, Audio, Img, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
+import { loadFont } from "@remotion/google-fonts/TitanOne";
+const { fontFamily } = loadFont();
 
 export const FacelessVideo = ({data}) => {
     const frame = useCurrentFrame();
@@ -8,7 +10,16 @@ export const FacelessVideo = ({data}) => {
         const {text, start, end} = data.voice_over_chunks.groups[index];
         return {
             src: image.image_path,
-            text: text,
+            text,
+            durationInFrames: (end - start) * fps,
+            from: start * fps,
+        };
+    });
+
+    const sentences = data.voice_over_chunks.sentences.map((sentence, index) => {
+        const {text, start, end} = sentence;
+        return {
+            text,
             durationInFrames: (end - start) * fps,
             from: start * fps,
         };
@@ -29,8 +40,12 @@ export const FacelessVideo = ({data}) => {
                 });
                 return <Sequence durationInFrames={image.durationInFrames} from={image.from}>
                     <Img src={image.src} style={{transform: `scale(${scale}) rotate(${rotation}deg)`}} />
-                    <AbsoluteFill>
-                        <div style={{background: '#f00', fontSize: 80}}>{image.text}</div>
+                </Sequence>
+            })}
+            {sentences.map((sentence) => {
+                return <Sequence durationInFrames={sentence.durationInFrames} from={sentence.from}>
+                    <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+                        <div style={{padding: 20, fontFamily, background: 'rgba(0, 0, 0, 0.25)', color: '#fff', fontSize: 60, textAlign: 'center'}}>{sentence.text}</div>
                     </AbsoluteFill>
                 </Sequence>
             })}
