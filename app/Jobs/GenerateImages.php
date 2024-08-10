@@ -43,9 +43,10 @@ class GenerateImages implements ShouldQueue
                 ]);
                 $res = app('replicate')->run('black-forest-labs/flux-schnell', [
                     'prompt' => $imagePrompt,
+                    'aspect_ratio' => '9:16',
                 ]);
                 $image->update([
-                    'image_path' => $res,
+                    'image_path' => $res[0],
                 ]);
             };
         });

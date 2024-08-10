@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Jobs\Parallel;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Bus;
@@ -9,13 +8,16 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/story/{story}', function(Story $story) {
-    return $story;
+    $story->load('images');
+    return Inertia::render('Stories/Show', [
+        'story' => $story
+    ]);
 });
 
 Route::get('/brainstorm', function () {
     $story = \App\Models\Story::create([
         'status' => 'PENDING',
-        'series' => 'Roman empire',
+        'series' => 'Scary stories',
         'language' => 'English'
     ]);
 //    $story = \App\Models\Story::find(1);

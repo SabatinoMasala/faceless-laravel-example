@@ -35,7 +35,7 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
 
     protected function shouldMock(): bool
     {
-        return true;
+        return env('SHOULD_MOCK_STORY', false);
     }
 
     protected function execute()

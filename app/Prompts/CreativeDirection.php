@@ -6,7 +6,8 @@ class CreativeDirection extends BasePrompt
 {
 
     public function __construct(
-        public string $story
+        public string $story,
+        public string $series
     ){}
 
     public function getBasePrompt(): string
@@ -24,6 +25,8 @@ Do include precise descriptions of animals, beings, etc, and describe them in in
 Use keywords instead of sentences.
 
 ### context ###
+
+The story is part of the series: {series}
 
 This is the story: {story}';
     }

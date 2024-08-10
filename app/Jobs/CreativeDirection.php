@@ -20,12 +20,12 @@ class CreativeDirection extends MockableJob implements ShouldQueue
 
     protected function shouldMock(): bool
     {
-        return true;
+        return env('SHOULD_MOCK_STORY', false);
     }
 
     protected function execute()
     {
-        $prompt = new \App\Prompts\CreativeDirection($this->story->content);
+        $prompt = new \App\Prompts\CreativeDirection($this->story->content, $this->story->series);
         $output = app('replicate')->run('meta/meta-llama-3.1-405b-instruct', [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
