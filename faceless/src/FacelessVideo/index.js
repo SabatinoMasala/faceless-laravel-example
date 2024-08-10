@@ -5,9 +5,10 @@ export const FacelessVideo = ({data}) => {
     const {durationInFrames, fps} = useVideoConfig();
 
     const images = data.images.map((image, index) => {
-        const {start, end} = data.voice_over_chunks.groups[index];
+        const {text, start, end} = data.voice_over_chunks.groups[index];
         return {
             src: image.image_path,
+            text: text,
             durationInFrames: (end - start) * fps,
             from: start * fps,
         };
@@ -18,18 +19,19 @@ export const FacelessVideo = ({data}) => {
     return (
         <AbsoluteFill style={{backgroundColor: 'white'}}>
             <Audio src={audio} />
-            {frame}
             {images.map((image, index) => {
                 const startRotation = (random(index) * 10) - 5;
-                console.log(startRotation)
                 const scale = interpolate(frame, [image.from, image.from + image.durationInFrames], [1.4, 1.2], {
                     extrapolateRight: 'clamp',
                 });
                 const rotation = interpolate(frame, [image.from, image.from + image.durationInFrames], [startRotation, 0], {
                     extrapolateRight: 'clamp',
                 });
-                return <Sequence durationInFrames={image.durationInFrames} from={image.from} style={{transform: `scale(${scale}) rotate(${rotation}deg)`}}>
-                    <Img src={image.src} />
+                return <Sequence durationInFrames={image.durationInFrames} from={image.from}>
+                    <Img src={image.src} style={{transform: `scale(${scale}) rotate(${rotation}deg)`}} />
+                    <AbsoluteFill>
+                        <div style={{background: '#f00', fontSize: 80}}>{image.text}</div>
+                    </AbsoluteFill>
                 </Sequence>
             })}
         </AbsoluteFill>
