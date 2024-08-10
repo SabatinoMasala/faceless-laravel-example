@@ -1,4 +1,6 @@
 /.phpunit.cache
+/faceless/node_modules
+/faceless/out
 /node_modules
 /public/build
 /public/hot

@@ -14,6 +14,11 @@ Route::get('/story/{story}', function(Story $story) {
     ]);
 });
 
+Route::get('/api/story/{story}', function(Story $story) {
+    $story->load('images');
+    return $story;
+});
+
 Route::get('/brainstorm', function () {
     $story = \App\Models\Story::create([
         'status' => 'PENDING',
