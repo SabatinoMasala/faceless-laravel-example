@@ -3,7 +3,7 @@ import {Word} from "./Word";
 
 export const Captions = ({wordChunks}) => {
     const frame = useCurrentFrame();
-    const {durationInFrames, fps} = useVideoConfig();
+    const {fps} = useVideoConfig();
     const captionChunks = [];
     let count = 0;
     let currentChunk = [];
@@ -15,7 +15,7 @@ export const Captions = ({wordChunks}) => {
         });
         count++;
         const wordContainsPunctuation = word.text.match(/[\.\?\!\,]/);
-        if (count === 10 || count >= 3 && wordContainsPunctuation) {
+        if (count === 10 || count >= 6 && wordContainsPunctuation) {
             count = 0;
             captionChunks.push({
                 start: currentChunk[0].start,
@@ -27,7 +27,7 @@ export const Captions = ({wordChunks}) => {
         }
     });
 
-    return captionChunks.map((chunk) => {
+    return captionChunks.map((chunk, index) => {
         return <Sequence durationInFrames={chunk.durationInFrames} from={chunk.start}>
             <AbsoluteFill>
                 <div style={{textAlign: 'center', position: 'absolute', bottom: '20%', left: '10%', right: '10%'}}>

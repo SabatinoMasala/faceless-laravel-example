@@ -1,4 +1,4 @@
-import {AbsoluteFill, Audio, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Audio} from 'remotion';
 import {Captions} from "./Captions";
 import {Images} from "./Images";
 

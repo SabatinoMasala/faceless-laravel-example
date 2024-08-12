@@ -19,10 +19,16 @@ export const Images = ({images, data}) => {
     });
     return panels.map((image, index) => {
         const startRotation = (random(index) * 4) - 2;
-        const scale = interpolate(frame, [image.from, image.from + image.durationInFrames], [1.4, 1.2], {
+        const scale = interpolate(frame, [
+            image.from,
+            image.from + image.durationInFrames
+        ], [1.4, 1.2], {
             extrapolateRight: 'clamp',
         });
-        const rotation = interpolate(frame, [image.from, image.from + image.durationInFrames], [startRotation, 0], {
+        const rotation = interpolate(frame, [
+            image.from,
+            image.from + image.durationInFrames
+        ], [startRotation, 0], {
             extrapolateRight: 'clamp',
         });
         return <Sequence durationInFrames={image.durationInFrames} from={image.from}>
