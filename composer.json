@@ -9,6 +9,7 @@
         "inertiajs/inertia-laravel": "^1.0",
         "james-heinrich/getid3": "^1.9",
         "laravel/framework": "^11.9",
+        "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "openai-php/client": "^0.10.1",
