@@ -12,6 +12,8 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
 {
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -58,4 +60,14 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
         ]);
         Storage::disk('public')->put('audio/story-' . $this->story->id . '.mp3', $audioString);
     }
+
+
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'VOICE_OVER_FAILED',
+        ]);
+    }
+
 }

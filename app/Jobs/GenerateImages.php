@@ -13,6 +13,8 @@ class GenerateImages implements ShouldQueue
 {
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -51,6 +53,7 @@ class GenerateImages implements ShouldQueue
                 ]);
                 $image->update([
                     'image_path' => $res[0],
+                    'status' => 'COMPLETED'
                 ]);
             };
         });
@@ -60,4 +63,14 @@ class GenerateImages implements ShouldQueue
             'status' => 'IMAGES_END',
         ]);
     }
+
+
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'IMAGES_FAILED',
+        ]);
+    }
+
 }

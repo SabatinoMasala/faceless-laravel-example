@@ -11,6 +11,8 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
 {
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -49,4 +51,12 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
             'timestamp' => 'word',
         ]);
     }
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'TRANSCRIBE_FAILED',
+        ]);
+    }
+
 }

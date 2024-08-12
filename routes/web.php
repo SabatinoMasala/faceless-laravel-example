@@ -9,7 +9,7 @@ use Inertia\Inertia;
 
 Route::get('/story/{story}', function(Story $story) {
     $story->load('images');
-    return Inertia::render('Stories/Show', [
+    return Inertia::render('Story/Show', [
         'story' => $story
     ]);
 });

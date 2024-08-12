@@ -11,6 +11,8 @@ class CreativeDirection extends MockableJob implements ShouldQueue
 
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -76,6 +78,13 @@ class CreativeDirection extends MockableJob implements ShouldQueue
         $this->story->update([
             'creative_direction' => $this->handleOrMock(),
             'status' => 'CREATIVE_DIRECTION_END',
+        ]);
+    }
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'CREATIVE_DIRECTION_FAILED',
         ]);
     }
 }

@@ -12,6 +12,8 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
 
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -56,4 +58,12 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
             'status' => 'BRAINSTORM_END',
         ]);
     }
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'BRAINSTORM_FAILED',
+        ]);
+    }
+
 }

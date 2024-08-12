@@ -10,6 +10,8 @@ class GenerateStory extends MockableJob implements ShouldQueue
 {
     use Queueable;
 
+    protected $timeout = 600;
+
     /**
      * Create a new job instance.
      */
@@ -50,4 +52,14 @@ class GenerateStory extends MockableJob implements ShouldQueue
         ]);
         return collect($output)->join('');
     }
+
+
+
+    public function failed()
+    {
+        $this->story->update([
+            'status' => 'STORY_FAILED',
+        ]);
+    }
+
 }
