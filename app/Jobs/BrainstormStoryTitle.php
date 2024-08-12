@@ -49,7 +49,11 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
     public function handle(): void
     {
         $this->story->update([
+            'status' => 'BRAINSTORM_START',
+        ]);
+        $this->story->update([
             'title' => $this->handleOrMock(),
+            'status' => 'BRAINSTORM_END',
         ]);
     }
 }

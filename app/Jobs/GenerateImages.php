@@ -25,6 +25,9 @@ class GenerateImages implements ShouldQueue
      */
     public function handle(): void
     {
+        $this->story->update([
+            'status' => 'IMAGES_START',
+        ]);
         collect($this->story->voice_over_chunks['groups'])->each(function($group) {
             $this->story->images()->create([
                 'status' => 'PENDING',
@@ -52,5 +55,8 @@ class GenerateImages implements ShouldQueue
         });
         $results = Fork::new()
             ->run(...$callables);
+        $this->story->update([
+            'status' => 'IMAGES_END',
+        ]);
     }
 }

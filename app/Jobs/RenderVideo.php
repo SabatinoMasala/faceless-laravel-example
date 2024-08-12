@@ -24,6 +24,9 @@ class RenderVideo implements ShouldQueue
      */
     public function handle(): void
     {
+        $this->story->update([
+            'status' => 'VIDEO_START',
+        ]);
         $process = new Process([
             'yarn',
             'build',
@@ -36,10 +39,14 @@ class RenderVideo implements ShouldQueue
         if ($process->isSuccessful()) {
             $this->story->update([
                 'video_path' => 'video/' . $this->story->id . '.mp4',
+                'status' => 'VIDEO_END',
             ]);
         } else {
             \Log::info($process->getOutput());
             \Log::info($process->getErrorOutput());
+            $this->story->update([
+                'status' => 'VIDEO_ERROR',
+            ]);
             throw new \Exception('Failed to render video');
         }
     }

@@ -28,7 +28,11 @@ class GenerateStory extends MockableJob implements ShouldQueue
     public function handle(): void
     {
         $this->story->update([
+            'status' => 'STORY_START',
+        ]);
+        $this->story->update([
             'content' => $this->handleOrMock(),
+            'status' => 'STORY_END',
         ]);
     }
 

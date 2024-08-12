@@ -24,7 +24,11 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
     public function handle(): void
     {
         $this->story->update([
+            'status' => 'TRANSCRIBE_START',
+        ]);
+        $this->story->update([
             'voice_over_transcription' => $this->handleOrMock(),
+            'status' => 'TRANSCRIBE_END',
         ]);
     }
 

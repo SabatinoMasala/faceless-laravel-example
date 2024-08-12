@@ -71,7 +71,11 @@ class CreativeDirection extends MockableJob implements ShouldQueue
     public function handle(): void
     {
         $this->story->update([
+            'status' => 'CREATIVE_DIRECTION_START',
+        ]);
+        $this->story->update([
             'creative_direction' => $this->handleOrMock(),
+            'status' => 'CREATIVE_DIRECTION_END',
         ]);
     }
 }

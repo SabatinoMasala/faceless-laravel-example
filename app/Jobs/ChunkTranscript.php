@@ -22,6 +22,9 @@ class ChunkTranscript implements ShouldQueue
      */
     public function handle(): void
     {
+        $this->story->update([
+            'status' => 'CHUNKING_START',
+        ]);
         $sentences = [];
         $currentSentence = '';
         $startTime = 0;
@@ -79,6 +82,7 @@ class ChunkTranscript implements ShouldQueue
                 'groups' => $groups->values(),
                 'sentences' => $sentences,
             ],
+            'status' => 'CHUNKING_END',
         ]);
     }
 }
