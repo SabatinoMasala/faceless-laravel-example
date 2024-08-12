@@ -15,7 +15,7 @@ export const Captions = ({wordChunks}) => {
         });
         count++;
         const wordContainsPunctuation = word.text.match(/[\.\?\!\,]/);
-        if (count === 10 || count >= 6 && wordContainsPunctuation) {
+        if (count === 6 || count >= 4 && wordContainsPunctuation) {
             count = 0;
             captionChunks.push({
                 start: currentChunk[0].start,
@@ -32,8 +32,7 @@ export const Captions = ({wordChunks}) => {
             <AbsoluteFill>
                 <div style={{textAlign: 'center', position: 'absolute', bottom: '20%', left: '10%', right: '10%'}}>
                     {chunk.words.map(word => {
-                        const isActive = frame >= word.start && frame <= word.end;
-                        return <Word word={word} isActive={isActive} />
+                        return <Word word={word} frame={frame} />
                     })}
                 </div>
             </AbsoluteFill>
