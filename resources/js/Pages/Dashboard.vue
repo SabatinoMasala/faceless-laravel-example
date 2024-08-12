@@ -12,9 +12,12 @@ import {
 } from '@/Components/ui/form'
 import { Input } from '@/components/ui/input'
 import {ref} from "vue";
+import { router } from '@inertiajs/vue3'
 
 const onSubmit = () => {
-    alert(subject.value)
+    router.post('/story', {
+        subject: subject.value
+    })
 };
 
 const subject = ref('');

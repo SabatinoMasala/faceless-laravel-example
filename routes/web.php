@@ -1,44 +1,20 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StoryController;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/story/{story}', function(Story $story) {
-    $story->load('images');
-    return Inertia::render('Story/Show', [
-        'story' => $story
-    ]);
-});
 
 Route::get('/api/story/{story}', function(Story $story) {
     $story->load('images');
     return $story;
 });
 
-Route::get('/brainstorm', function () {
-//    $story = \App\Models\Story::find(8);
-//    \App\Jobs\RenderVideo::dispatch($story);
-    $story = \App\Models\Story::create([
-        'status' => 'PENDING',
-        'series' => 'Scary stories',
-        'language' => 'English'
-    ]);
-    Bus::chain([
-        new \App\Jobs\BrainstormStoryTitle($story),
-        new \App\Jobs\GenerateStory($story),
-        new \App\Jobs\GenerateVoiceOver($story),
-        new \App\Jobs\TranscribeAudio($story),
-        new \App\Jobs\ChunkTranscript($story),
-        new \App\Jobs\CreativeDirection($story),
-        new \App\Jobs\GenerateImages($story),
-        new \App\Jobs\RenderVideo($story)
-    ])->dispatch();
-    return response()->redirectTo('/story/' . $story->id);
-});
+Route::post('/story', [StoryController::class, 'store']);
+Route::get('/story/{story}', [StoryController::class, 'show']);
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
