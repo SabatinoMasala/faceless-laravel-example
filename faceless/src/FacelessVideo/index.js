@@ -8,19 +8,29 @@ export const FacelessVideo = ({data}) => {
 
     const images = data.images.map((image, index) => {
         const {text, start, end} = data.voice_over_chunks.groups[index];
+        const isLast = data.images.length - 1 === index;
+        let imageDuration = (end - start) * fps;
+        if (isLast) {
+            imageDuration = durationInFrames - start * fps;
+        }
         return {
             src: image.image_path,
             text,
-            durationInFrames: (end - start) * fps,
+            durationInFrames: imageDuration,
             from: start * fps,
         };
     });
 
     const sentences = data.voice_over_chunks.sentences.map((sentence, index) => {
         const {text, start, end} = sentence;
+        const isLast = data.voice_over_chunks.sentences.length - 1 === index;
+        let sentenceDuration = (end - start) * fps;
+        if (isLast) {
+            sentenceDuration = durationInFrames - start * fps;
+        }
         return {
             text,
-            durationInFrames: (end - start) * fps,
+            durationInFrames: sentenceDuration,
             from: start * fps,
         };
     });
@@ -31,7 +41,7 @@ export const FacelessVideo = ({data}) => {
         <AbsoluteFill style={{backgroundColor: 'white'}}>
             <Audio src={audio} />
             {images.map((image, index) => {
-                const startRotation = (random(index) * 10) - 5;
+                const startRotation = (random(index) * 4) - 2;
                 const scale = interpolate(frame, [image.from, image.from + image.durationInFrames], [1.4, 1.2], {
                     extrapolateRight: 'clamp',
                 });

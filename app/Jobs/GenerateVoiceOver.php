@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Models\Story;
+use getID3;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Facades\Storage;
@@ -37,7 +38,8 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
 
     protected function shouldMock(): bool
     {
-        return env('SHOULD_MOCK_STORY', false);
+        // return env('SHOULD_MOCK_STORY', false);
+        return false;
     }
 
     protected function execute()
@@ -48,5 +50,11 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
             'voice' => 'alloy',
         ]);
         Storage::disk('public')->put('audio/story-' . $this->story->id . '.mp3', $audioString);
+        $getID3 = new getID3();
+        $filepath = storage_path('app/public/audio/story-' . $this->story->id . '.mp3');
+        $fileInfo = $getID3->analyze($filepath);
+        $this->story->update([
+            'duration_in_seconds' => $fileInfo['playtime_seconds']
+        ]);
     }
 }

@@ -1,24 +1,22 @@
 import {Composition} from 'remotion';
 import {FacelessVideo} from './FacelessVideo';
 
-// Each <Composition> is an entry in the sidebar!
+const FPS = 30;
 
 export const RemotionRoot = () => {
 	return (
 		<>
 			<Composition
-				// You can take the "id" to render a video:
-				// npx remotion render src/index.jsx <id> out/video.mp4
 				id="FacelessVideo"
 				component={FacelessVideo}
-				durationInFrames={99 * 30}
-				fps={30}
+				fps={FPS}
 				width={1080}
 				height={1920}
                 calculateMetadata={async ({ props }) => {
-                    const data = await fetch(`http://faceless-laravel-example.test/api/story/${props.id}`);
+                    const data = await fetch(`http://faceless-laravel-example.test/api/story/2`);
                     const json = await data.json();
                     return {
+                        durationInFrames: Math.ceil(json.duration_in_seconds * FPS),
                         props: {
                             ...props,
                             data: json,
