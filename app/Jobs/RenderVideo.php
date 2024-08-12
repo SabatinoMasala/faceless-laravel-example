@@ -33,7 +33,14 @@ class RenderVideo implements ShouldQueue
             '--output=' . base_path('storage/app/public/video/' . $this->story->id . '.mp4'),
             ], base_path('faceless'));
         $process->run();
-        \Log::info($process->getOutput());
-        \Log::info($process->getErrorOutput());
+        if ($process->isSuccessful()) {
+            $this->story->update([
+                'video_path' => 'video/' . $this->story->id . '.mp4',
+            ]);
+        } else {
+            \Log::info($process->getOutput());
+            \Log::info($process->getErrorOutput());
+            throw new \Exception('Failed to render video');
+        }
     }
 }

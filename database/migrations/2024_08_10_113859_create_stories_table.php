@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('language');
             $table->string('title')->nullable();
             $table->string('voice_over_path')->nullable();
+            $table->string('video_path')->nullable();
             $table->float('duration_in_seconds')->nullable();
             $table->json('voice_over_transcription')->nullable();
             $table->json('voice_over_chunks')->nullable();
