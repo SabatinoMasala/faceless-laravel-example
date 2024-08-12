@@ -15,7 +15,8 @@
         "openai-php/client": "^0.10.1",
         "sabatinomasala/replicate-php": "^1.1",
         "spatie/fork": "^1.2",
-        "tightenco/ziggy": "^2.0"
+        "tightenco/ziggy": "^2.0",
+        "ext-pcntl": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.1",
