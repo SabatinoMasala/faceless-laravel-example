@@ -20,12 +20,13 @@ Route::get('/api/story/{story}', function(Story $story) {
 });
 
 Route::get('/brainstorm', function () {
+//    $story = \App\Models\Story::find(8);
+//    \App\Jobs\RenderVideo::dispatch($story);
     $story = \App\Models\Story::create([
         'status' => 'PENDING',
         'series' => 'Scary stories',
         'language' => 'English'
     ]);
-//    $story = \App\Models\Story::find(1);
     Bus::chain([
         new \App\Jobs\BrainstormStoryTitle($story),
         new \App\Jobs\GenerateStory($story),
@@ -33,7 +34,8 @@ Route::get('/brainstorm', function () {
         new \App\Jobs\TranscribeAudio($story),
         new \App\Jobs\ChunkTranscript($story),
         new \App\Jobs\CreativeDirection($story),
-        new \App\Jobs\GenerateImages($story)
+        new \App\Jobs\GenerateImages($story),
+        new \App\Jobs\RenderVideo($story)
     ])->dispatch();
     return $story;
 });

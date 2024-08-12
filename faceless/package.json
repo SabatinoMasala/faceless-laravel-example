@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion render FacelessVideo out/video.mp4",
+    "build": "remotion render FacelessVideo",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx"
   },

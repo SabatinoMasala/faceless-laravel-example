@@ -1,7 +1,7 @@
 import {Composition} from 'remotion';
 import {FacelessVideo} from './FacelessVideo';
 
-const FPS = 30;
+const FPS = 1;
 
 export const RemotionRoot = () => {
 	return (

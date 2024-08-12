@@ -25,8 +25,12 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
     public function handle(): void
     {
         $this->handleOrMock();
+        $getID3 = new getID3();
+        $filepath = storage_path('app/public/audio/story-' . $this->story->id . '.mp3');
+        $fileInfo = $getID3->analyze($filepath);
         $this->story->update([
-            'voice_over_path' => 'audio/story-' . $this->story->id . '.mp3'
+            'voice_over_path' => 'audio/story-' . $this->story->id . '.mp3',
+            'duration_in_seconds' => $fileInfo['playtime_seconds']
         ]);
     }
 
@@ -49,11 +53,5 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
             'voice' => 'alloy',
         ]);
         Storage::disk('public')->put('audio/story-' . $this->story->id . '.mp3', $audioString);
-        $getID3 = new getID3();
-        $filepath = storage_path('app/public/audio/story-' . $this->story->id . '.mp3');
-        $fileInfo = $getID3->analyze($filepath);
-        $this->story->update([
-            'duration_in_seconds' => $fileInfo['playtime_seconds']
-        ]);
     }
 }
