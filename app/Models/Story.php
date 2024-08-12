@@ -17,7 +17,7 @@ class Story extends BaseModel
         parent::boot();
         static::updated(function($story) {
             if ($story->isDirty('status')) {
-                StoryStatusUpdated::dispatch($story->id);
+                StoryStatusUpdated::dispatch($story, $story->status);
             }
         });
     }

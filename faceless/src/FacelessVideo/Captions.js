@@ -15,6 +15,9 @@ export const Captions = ({wordChunks}) => {
         });
         count++;
         const wordContainsPunctuation = word.text.match(/[\.\?\!\,]/);
+        if (currentChunk[currentChunk.length - 1].end - currentChunk[0].start < 0) {
+            console.log(currentChunk);
+        }
         if (count === 6 || count >= 4 && wordContainsPunctuation) {
             count = 0;
             captionChunks.push({

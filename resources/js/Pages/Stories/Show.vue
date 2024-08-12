@@ -1,27 +1,20 @@
 <template>
     <div class="max-w-2xl mx-auto p-3">
-        <div class="flex mb-3" v-for="image in story.images">
-            <img width="256" :src="getImage(image)" />
-            <div class="p-3">
-                {{ image.paragraph }}
-            </div>
-        </div>
-        <pre>{{ story }}</pre>
+        <div>{{ status }}</div>
     </div>
 </template>
 <script setup>
+import {ref} from 'vue';
 const props = defineProps({
     story: Object
 })
 
-const getImage = (image) => {
-    return image.image_path;
-}
+const status = ref(props.story.status);
 
 Echo
     .channel(`story.${props.story.id}`)
     .listen('StoryStatusUpdated', (e) => {
-        console.log(e.story);
+        status.value = e.status;
     });
 
 </script>

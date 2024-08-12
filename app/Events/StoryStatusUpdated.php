@@ -2,6 +2,7 @@
 
 namespace App\Events;
 
+use App\Models\Story;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
@@ -16,7 +17,8 @@ class StoryStatusUpdated implements ShouldBroadcast
      * Create a new event instance.
      */
     public function __construct(
-        public $story,
+        protected Story $story,
+        public string $status,
     ){}
     /**
      * Get the channels the event should broadcast on.
@@ -26,7 +28,7 @@ class StoryStatusUpdated implements ShouldBroadcast
     public function broadcastOn(): array
     {
         return [
-            new Channel('story.' . $this->story),
+            new Channel('story.' . $this->story->id),
         ];
     }
 }
