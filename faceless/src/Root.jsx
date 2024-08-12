@@ -13,7 +13,7 @@ export const RemotionRoot = () => {
 				width={1080}
 				height={1920}
                 calculateMetadata={async ({ props }) => {
-                    const data = await fetch(`http://faceless-laravel-example.test/api/story/2`);
+                    const data = await fetch(props.json);
                     const json = await data.json();
                     return {
                         durationInFrames: Math.ceil(json.duration_in_seconds * FPS),

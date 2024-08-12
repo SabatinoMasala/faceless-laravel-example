@@ -38,8 +38,7 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
 
     protected function shouldMock(): bool
     {
-        // return env('SHOULD_MOCK_STORY', false);
-        return false;
+        return env('SHOULD_MOCK_STORY', false);
     }
 
     protected function execute()
