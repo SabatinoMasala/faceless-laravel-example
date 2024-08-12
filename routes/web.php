@@ -37,7 +37,7 @@ Route::get('/brainstorm', function () {
         new \App\Jobs\GenerateImages($story),
         new \App\Jobs\RenderVideo($story)
     ])->dispatch();
-    return $story;
+    return response()->redirectTo('/story/' . $story->id);
 });
 
 Route::get('/', function () {

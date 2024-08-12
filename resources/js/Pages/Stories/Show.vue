@@ -18,4 +18,10 @@ const getImage = (image) => {
     return image.image_path;
 }
 
+Echo
+    .channel(`story.${props.story.id}`)
+    .listen('StoryStatusUpdated', (e) => {
+        console.log(e.story);
+    });
+
 </script>
