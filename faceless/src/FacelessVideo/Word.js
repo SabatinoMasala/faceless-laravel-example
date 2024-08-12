@@ -10,8 +10,6 @@ const wordStyle = {
 };
 
 export const Word = ({word, frame}) => {
-    const isActive = frame >= word.start && frame <= word.end;
-    console.log(frame, word.text)
     const color = interpolateColors(frame, [word.start - 4, word.start], ['white', '#ffafae']);
     const style = {
         ...wordStyle,
