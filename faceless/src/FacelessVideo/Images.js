@@ -4,8 +4,7 @@ export const Images = ({images, data}) => {
     const frame = useCurrentFrame();
     const {durationInFrames, fps} = useVideoConfig();
     const panels = images.map((image, index) => {
-        // TODO, include start/end from server
-        const {start, end} = data.voice_over_chunks.groups[index];
+        const {start, end} = image;
         const isLast = images.length - 1 === index;
         let imageDuration = (end - start) * fps;
         if (isLast) {

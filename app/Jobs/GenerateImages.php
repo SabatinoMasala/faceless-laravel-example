@@ -3,13 +3,14 @@
 namespace App\Jobs;
 
 use App\Models\Story;
-use Illuminate\Bus\Batchable;
+use Illuminate\Bus\ChainedBatch;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use Illuminate\Support\Facades\Bus;
 
 class GenerateImages implements ShouldQueue
 {
-    use Queueable, Batchable;
+    use Queueable;
 
     public $timeout = 600;
 
@@ -33,13 +34,19 @@ class GenerateImages implements ShouldQueue
         collect($this->story->voice_over_chunks['groups'])->each(function($group) {
             $this->story->images()->create([
                 'status' => 'PENDING',
-                'paragraph' => $group['text']
+                'paragraph' => $group['text'],
+                'start' => $group['start'],
+                'end' => $group['end'],
             ]);
         });
 
-        collect($this->story->images)->each(function($image) {
-            $this->batch()->add(new GenerateImage($this->story, $image));
+        $jobs = collect($this->story->images)->map(function($image) {
+            return new GenerateImage($this->story, $image);
         });
+
+        // Workaround for https://github.com/laravel/framework/issues/52468
+        $chainedBatch = new ChainedBatch(Bus::batch($jobs));
+        $this->prependToChain($chainedBatch);
     }
 
     public function failed()

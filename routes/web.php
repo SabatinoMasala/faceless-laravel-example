@@ -1,21 +1,20 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\StoryController;
+use App\Http\Controllers\StoriesController;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-Route::get('/api/story/{story}', function(Story $story) {
+Route::get('/api/stories/{story}', function(Story $story) {
     $story->load('images');
     return $story;
 });
 
-Route::post('/story', [StoryController::class, 'store']);
-Route::get('/story/{story}', [StoryController::class, 'show']);
+Route::post('/stories', [StoriesController::class, 'store'])->name('stories.store');
+Route::get('/stories/{story}', [StoriesController::class, 'show'])->name('stories.show');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

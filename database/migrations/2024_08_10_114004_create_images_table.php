@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('paragraph')->nullable();
             $table->string('prompt')->nullable();
             $table->string('image_path')->nullable();
+            $table->float('start')->nullable();
+            $table->float('end')->nullable();
             $table->timestamps();
         });
     }

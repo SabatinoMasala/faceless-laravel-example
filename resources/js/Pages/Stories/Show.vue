@@ -62,7 +62,7 @@ const getStatus = (status) => {
 Echo
     .channel(`story.${props.story.id}`)
     .listen('StoryStatusUpdated', (e) => {
-        fetch(`/api/story/${props.story.id}`)
+        fetch(`/api/stories/${props.story.id}`)
             .then(response => response.json())
             .then(data => {
                 story.value = data;

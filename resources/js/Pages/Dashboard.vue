@@ -15,7 +15,7 @@ import {ref} from "vue";
 import { router } from '@inertiajs/vue3'
 
 const onSubmit = () => {
-    router.post('/story', {
+    router.post('/stories', {
         subject: subject.value
     })
 };
