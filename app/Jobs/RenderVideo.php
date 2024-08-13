@@ -33,7 +33,7 @@ class RenderVideo implements ShouldQueue
             'yarn',
             'build',
             '--props=' . json_encode([
-                'json' => 'http://faceless-laravel-example.test/api/stories/' . $this->story->id,
+                'json' => url('/api/stories/' . $this->story->id),
             ]),
             '--output=' . base_path('storage/app/public/video/' . $this->story->id . '.mp4'),
             ], base_path('faceless'));
