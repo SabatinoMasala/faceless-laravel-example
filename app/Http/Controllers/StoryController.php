@@ -38,7 +38,7 @@ class StoryController extends Controller
 
     public function show(Story $story)
     {
-         dispatch(new GenerateImages($story));
+        dispatch(new GenerateImages($story));
         $story->load('images');
         return Inertia::render('Story/Show', [
             'story' => $story

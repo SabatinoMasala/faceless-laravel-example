@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "189019e868dd53dff94c2ff7309e55f6",
+    "content-hash": "576c51f219dda57cbf6ff6766effd442",
     "packages": [
         {
             "name": "brick/math",
@@ -4861,138 +4861,6 @@
                 }
             ],
             "time": "2023-11-12T11:05:47+00:00"
-        },
-        {
-            "name": "spatie/async",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/async.git",
-                "reference": "c270e692f6eabafb4312e1ecd44e062032785635"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/async/zipball/c270e692f6eabafb4312e1ecd44e062032785635",
-                "reference": "c270e692f6eabafb4312e1ecd44e062032785635",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/serializable-closure": "^1.0",
-                "php": "^7.4|^8.0",
-                "symfony/process": "^3.3 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
-            },
-            "require-dev": {
-                "larapack/dd": "^1.1",
-                "phpunit/phpunit": "^7.5 || ^8.5.21 || ^9.0 || ^10.0",
-                "symfony/stopwatch": "^4.0 || ^5.0 || ^6.0 || ^7.0"
-            },
-            "suggest": {
-                "ext-pcntl": "Required to use async processes",
-                "ext-posix": "Required to use async processes"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Spatie\\Async\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent Roose",
-                    "email": "brent@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Asynchronous and parallel PHP with the PCNTL extension",
-            "homepage": "https://github.com/spatie/async",
-            "keywords": [
-                "async",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/async/issues",
-                "source": "https://github.com/spatie/async/tree/1.6.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-14T13:21:46+00:00"
-        },
-        {
-            "name": "spatie/fork",
-            "version": "1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/fork.git",
-                "reference": "c79b4c10ce1c22efb7e90429a5ff30d36c7d8ae3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/fork/zipball/c79b4c10ce1c22efb7e90429a5ff30d36c7d8ae3",
-                "reference": "c79b4c10ce1c22efb7e90429a5ff30d36c7d8ae3",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcntl": "*",
-                "ext-sockets": "*",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "nesbot/carbon": "^2.66",
-                "pestphp/pest": "^1.23",
-                "phpunit/phpunit": "^9.5",
-                "spatie/ray": "^1.10"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Fork\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent Roose",
-                    "email": "brent@spatie.be",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A lightweight solution for running code concurrently in PHP",
-            "homepage": "https://github.com/spatie/fork",
-            "keywords": [
-                "fork",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/fork/issues",
-                "source": "https://github.com/spatie/fork/tree/1.2.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-07T16:42:08+00:00"
         },
         {
             "name": "symfony/clock",

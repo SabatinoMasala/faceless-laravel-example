@@ -2,6 +2,5 @@
 
 return [
     'llm' => 'meta/meta-llama-3.1-405b-instruct',
-    // 'diffuser' => 'black-forest-labs/flux-schnell',
-    'diffuser' => 'stability-ai/sdxl',
+    'diffuser' => 'black-forest-labs/flux-schnell',
 ];
