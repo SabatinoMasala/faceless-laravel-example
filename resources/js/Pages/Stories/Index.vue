@@ -29,7 +29,7 @@
                                 <tbody class="divide-y divide-gray-200">
                                 <tr v-for="story in stories.data" :key="story.id">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">{{ story.id }}</td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ story.title }}</td>
+                                    <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ story.title ? story.title : '(Title pending)' }}</td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ story.series }}</td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                         <StoryStatus :status="story.status" />
