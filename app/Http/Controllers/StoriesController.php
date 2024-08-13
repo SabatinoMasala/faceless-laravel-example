@@ -11,15 +11,25 @@ use App\Jobs\GenerateVoiceOver;
 use App\Jobs\RenderVideo;
 use App\Jobs\TranscribeAudio;
 use App\Models\Story;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Bus;
 use Inertia\Inertia;
 
 class StoriesController extends Controller
 {
+    public function index()
+    {
+        $stories = Story::where('user_id', Auth::user()->id)->paginate(10);
+        return Inertia::render('Stories/Index', [
+            'stories' => $stories
+        ]);
+    }
+
     public function store()
     {
         $story = Story::create([
             'status' => 'PENDING',
+            'user_id' => Auth::user()->id,
             'series' => request('subject'),
             'language' => 'English'
         ]);

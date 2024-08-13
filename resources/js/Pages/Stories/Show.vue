@@ -19,7 +19,7 @@
 
                             <div class="lg:col-span-5">
                                 <h1 class="text-xl font-medium text-gray-900">
-                                    <template v-if="story.title">{{ story.title }}</template>
+                                    <template v-if="story.title">{{ story.title ? story.title : '(title pending)' }}</template>
                                     <template v-else>
                                         (title pending)
                                     </template>

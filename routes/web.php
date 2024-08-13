@@ -13,6 +13,7 @@ Route::get('/api/stories/{story}', function(Story $story) {
     return $story;
 });
 
+Route::get('/stories', [StoriesController::class, 'index'])->name('stories.index');
 Route::post('/stories', [StoriesController::class, 'store'])->name('stories.store');
 Route::get('/stories/{story}', [StoriesController::class, 'show'])->name('stories.show');
 

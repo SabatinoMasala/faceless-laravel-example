@@ -41,7 +41,7 @@ class RenderVideo implements ShouldQueue
         if ($process->isSuccessful()) {
             $this->story->update([
                 'video_path' => 'video/' . $this->story->id . '.mp4',
-                'status' => 'VIDEO_END',
+                'status' => 'COMPLETED',
             ]);
         } else {
             \Log::info($process->getOutput());
