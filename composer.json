@@ -16,9 +16,12 @@
         "laravel/tinker": "^2.9",
         "openai-php/client": "^0.10.1",
         "predis/predis": "^2.2",
+        "sabatinomasala/laravel-llm-prompt": "^1.0",
         "sabatinomasala/replicate-php": "^1.1",
         "tightenco/ziggy": "^2.0"
     },
+    "repositories": [
+    ],
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.1",
         "fakerphp/faker": "^1.23",

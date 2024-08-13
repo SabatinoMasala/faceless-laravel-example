@@ -2,6 +2,8 @@
 
 namespace App\Prompts;
 
+use SabatinoMasala\LaravelLlmPrompt\BasePrompt;
+
 class CreativeDirection extends BasePrompt
 {
 

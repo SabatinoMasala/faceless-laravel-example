@@ -2,6 +2,8 @@
 
 namespace App\Prompts;
 
+use SabatinoMasala\LaravelLlmPrompt\BasePrompt;
+
 class GenerateStory extends BasePrompt
 {
 

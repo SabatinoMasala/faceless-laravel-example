@@ -2,6 +2,8 @@
 
 namespace App\Prompts;
 
+use SabatinoMasala\LaravelLlmPrompt\BasePrompt;
+
 class Brainstorm extends BasePrompt
 {
 
@@ -12,9 +14,9 @@ class Brainstorm extends BasePrompt
 
     public function addHistory(array $history): void
     {
-        $this->addAdditionalPromptLine('Make sure the following titles are not in the list:');
+        $this->add('Make sure the following titles are not in the list:');
         collect($history)->each(function($line) {
-            $this->addAdditionalPromptLine('- ' . $line);
+            $this->add('- ' . $line);
         });
     }
 
