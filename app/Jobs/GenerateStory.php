@@ -5,6 +5,7 @@ namespace App\Jobs;
 use App\Models\Story;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use SabatinoMasala\Replicate\Replicate;
 
 class GenerateStory extends MockableJob implements ShouldQueue
 {
@@ -43,10 +44,10 @@ class GenerateStory extends MockableJob implements ShouldQueue
         return env('SHOULD_MOCK_STORY', false);
     }
 
-    protected function execute()
+    public function execute(Replicate $replicate)
     {
         $prompt = new \App\Prompts\GenerateStory($this->story->language, $this->story->title);
-        $output = app('replicate')->run('meta/meta-llama-3.1-405b-instruct', [
+        $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
         ]);

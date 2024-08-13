@@ -7,6 +7,7 @@ use App\Models\Story;
 use App\Prompts\DescribeScene;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use SabatinoMasala\Replicate\Replicate;
 use Spatie\Fork\Fork;
 
 class GenerateImages implements ShouldQueue
@@ -25,7 +26,7 @@ class GenerateImages implements ShouldQueue
     /**
      * Execute the job.
      */
-    public function handle(): void
+    public function handle(Replicate $replicate): void
     {
         $this->story->update([
             'status' => 'IMAGES_START',
@@ -36,17 +37,17 @@ class GenerateImages implements ShouldQueue
                 'paragraph' => $group['text']
             ]);
         });
-        $callables = $this->story->images->map(function(Image $image) {
-            return function () use ($image) {
+        $callables = $this->story->images->map(function(Image $image) use ($replicate) {
+            return function () use ($image, $replicate) {
                 $prompt = new DescribeScene($this->story->content, $image->paragraph, $this->story->creative_direction);
-                $tokens = app('replicate')->run('meta/meta-llama-3.1-405b-instruct', [
+                $tokens = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
                     'prompt' => $prompt->get(),
                 ]);
                 $imagePrompt = collect($tokens)->implode('');
                 $image->update([
                     'prompt' => $imagePrompt,
                 ]);
-                $res = app('replicate')->run('black-forest-labs/flux-schnell', [
+                $res = $replicate->run('black-forest-labs/flux-schnell', [
                     'prompt' => $imagePrompt,
                     'aspect_ratio' => '9:16',
                     'disable_safety_checker' => true,

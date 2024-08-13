@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->bind('replicate', function () {
+        $this->app->bind(Replicate::class, function () {
             return new Replicate(env('REPLICATE_API_TOKEN'));
         });
         $this->app->bind('openai', function () {

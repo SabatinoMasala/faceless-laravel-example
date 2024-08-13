@@ -6,6 +6,7 @@ use App\Models\Story;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Facades\Storage;
+use SabatinoMasala\Replicate\Replicate;
 
 class TranscribeAudio extends MockableJob implements ShouldQueue
 {
@@ -44,9 +45,9 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
         return env('SHOULD_MOCK_STORY', false);
     }
 
-    protected function execute()
+    public function execute(Replicate $replicate)
     {
-        return app('replicate')->run('vaibhavs10/incredibly-fast-whisper:3ab86df6c8f54c11309d4d1f930ac292bad43ace52d10c80d87eb258b3c9f79c', [
+        return $replicate->run('vaibhavs10/incredibly-fast-whisper:3ab86df6c8f54c11309d4d1f930ac292bad43ace52d10c80d87eb258b3c9f79c', [
             'audio' => env('NGROK_URL') . Storage::url($this->story->voice_over_path),
             'timestamp' => 'word',
         ]);

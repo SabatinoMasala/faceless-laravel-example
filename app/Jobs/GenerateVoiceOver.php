@@ -51,7 +51,7 @@ class GenerateVoiceOver extends MockableJob implements ShouldQueue
         return env('SHOULD_MOCK_STORY', false);
     }
 
-    protected function execute()
+    public function execute()
     {
         $audioString = app('openai')->audio()->speech([
             'model' => 'tts-1',

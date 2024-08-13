@@ -6,6 +6,7 @@ use App\Models\Story;
 use App\Prompts\Brainstorm;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use SabatinoMasala\Replicate\Replicate;
 
 class BrainstormStoryTitle extends MockableJob implements ShouldQueue
 {
@@ -18,21 +19,21 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
      * Create a new job instance.
      */
     public function __construct(
-        public Story $story
-    ){}
+        public Story $story,
+    ) {}
 
     protected function shouldMock(): bool
     {
         return env('SHOULD_MOCK_STORY', false);
     }
 
-    protected function execute()
+    public function execute(Replicate $replicate)
     {
         $prompt = new Brainstorm($this->story->language, $this->story->series);
         $prompt->addHistory([
             'The story about julius caesar'
         ]);
-        $output = app('replicate')->run('meta/meta-llama-3.1-405b-instruct', [
+        $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
         ]);
