@@ -13,10 +13,6 @@ Route::get('/api/stories/{story}', function(Story $story) {
     return $story;
 });
 
-Route::get('/stories', [StoriesController::class, 'index'])->name('stories.index');
-Route::post('/stories', [StoriesController::class, 'store'])->name('stories.store');
-Route::get('/stories/{story}', [StoriesController::class, 'show'])->name('stories.show');
-
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -26,9 +22,16 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::group([
+    'middleware' => ['auth', 'verified'],
+], function() {
+    Route::get('/stories', [StoriesController::class, 'index'])->name('stories.index');
+    Route::post('/stories', [StoriesController::class, 'store'])->name('stories.store');
+    Route::get('/stories/{story}', [StoriesController::class, 'show'])->name('stories.show');
+    Route::get('/dashboard', function () {
+        return Inertia::render('Dashboard');
+    })->name('dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

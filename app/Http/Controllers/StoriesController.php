@@ -19,8 +19,11 @@ class StoriesController extends Controller
 {
     public function index()
     {
-        $stories = Story::where('user_id', Auth::user()->id)->paginate(10);
+        $stories = Story::where('user_id', Auth::user()->id)
+            ->orderBy('id', 'desc')
+            ->paginate(10);
         return Inertia::render('Stories/Index', [
+            'page' => (int)request('page', 1),
             'stories' => $stories
         ]);
     }

@@ -30,9 +30,15 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
     public function execute(Replicate $replicate)
     {
         $prompt = new Brainstorm($this->story->language, $this->story->series);
-        $prompt->addHistory([
-            'The story about julius caesar'
-        ]);
+        $history = Story::where('user_id', $this->story->user_id)
+            ->where('language', $this->story->language)
+            ->where('series', $this->story->series)
+            ->get()
+            ->pluck('title')
+            ->toArray();
+        if (!empty($history)) {
+            $prompt->addHistory($history);
+        }
         $output = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
