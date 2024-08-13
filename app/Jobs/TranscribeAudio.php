@@ -47,8 +47,13 @@ class TranscribeAudio extends MockableJob implements ShouldQueue
 
     public function execute(Replicate $replicate)
     {
+        if (config('app.env') === 'local' && env('NGROK_URL') !== null) {
+            $audio = env('NGROK_URL') . Storage::url($this->story->voice_over_path);
+        } else {
+            $audio = url(Storage::url($this->story->voice_over_path));
+        }
         return $replicate->run('vaibhavs10/incredibly-fast-whisper:3ab86df6c8f54c11309d4d1f930ac292bad43ace52d10c80d87eb258b3c9f79c', [
-            'audio' => env('NGROK_URL') . Storage::url($this->story->voice_over_path),
+            'audio' => $audio,
             'timestamp' => 'word',
         ]);
     }
