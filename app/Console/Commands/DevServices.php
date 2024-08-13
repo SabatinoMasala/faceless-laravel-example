@@ -41,6 +41,8 @@ class DevServices extends Command implements SignalableCommandInterface
 
         $this->info('Starting horizon');
         $horizon = new Process(['php', 'artisan', 'horizon']);
+        $horizon->start();
+        $this->info('Started horizon');
 
         $this->info('Starting queue ngrok...');
         $ngrok = new Process(['valet', 'share', '--domain=' . $ngrokUrl]);

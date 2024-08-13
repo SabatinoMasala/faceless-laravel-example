@@ -11,7 +11,7 @@ class GenerateStory extends MockableJob implements ShouldQueue
 {
     use Queueable;
 
-    protected $timeout = 600;
+    public $timeout = 600;
 
     /**
      * Create a new job instance.

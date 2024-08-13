@@ -17,6 +17,7 @@
         "openai-php/client": "^0.10.1",
         "predis/predis": "^2.2",
         "sabatinomasala/replicate-php": "^1.1",
+        "spatie/async": "^1.6",
         "spatie/fork": "^1.2",
         "tightenco/ziggy": "^2.0"
     },

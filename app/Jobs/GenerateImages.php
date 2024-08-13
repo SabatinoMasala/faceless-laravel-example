@@ -14,7 +14,7 @@ class GenerateImages implements ShouldQueue
 {
     use Queueable;
 
-    protected $timeout = 600;
+    public $timeout = 600;
 
     /**
      * Create a new job instance.
@@ -31,13 +31,14 @@ class GenerateImages implements ShouldQueue
         $this->story->update([
             'status' => 'IMAGES_START',
         ]);
+        $this->story->images()->delete();
         collect($this->story->voice_over_chunks['groups'])->each(function($group) {
             $this->story->images()->create([
                 'status' => 'PENDING',
                 'paragraph' => $group['text']
             ]);
         });
-        $callables = $this->story->images->map(function(Image $image) use ($replicate) {
+        $callables = $this->story->images->take(1)->map(function(Image $image) use ($replicate) {
             return function () use ($image, $replicate) {
                 $prompt = new DescribeScene($this->story->content, $image->paragraph, $this->story->creative_direction);
                 $tokens = $replicate->run(config('models.llm'), [
