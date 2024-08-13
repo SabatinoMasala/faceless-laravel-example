@@ -47,7 +47,7 @@ class GenerateStory extends MockableJob implements ShouldQueue
     public function execute(Replicate $replicate)
     {
         $prompt = new \App\Prompts\GenerateStory($this->story->language, $this->story->title);
-        $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
+        $output = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
         ]);

@@ -6,17 +6,19 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "ext-pcntl": "*",
         "inertiajs/inertia-laravel": "^1.0",
         "james-heinrich/getid3": "^1.9",
         "laravel/framework": "^11.9",
+        "laravel/horizon": "^5.27",
         "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "openai-php/client": "^0.10.1",
+        "predis/predis": "^2.2",
         "sabatinomasala/replicate-php": "^1.1",
         "spatie/fork": "^1.2",
-        "tightenco/ziggy": "^2.0",
-        "ext-pcntl": "*"
+        "tightenco/ziggy": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.1",

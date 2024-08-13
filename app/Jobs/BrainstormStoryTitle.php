@@ -33,7 +33,7 @@ class BrainstormStoryTitle extends MockableJob implements ShouldQueue
         $prompt->addHistory([
             'The story about julius caesar'
         ]);
-        $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
+        $output = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
         ]);

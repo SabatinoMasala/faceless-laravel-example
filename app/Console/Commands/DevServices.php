@@ -16,10 +16,7 @@ class DevServices extends Command implements SignalableCommandInterface
      * @var string
      */
     protected $signature = 'dev';
-
     public $shouldExit = false;
-    protected $queueWorkers = [];
-    protected $numQueueWorkers = 2;
 
     /**
      * The console command description.
@@ -42,13 +39,8 @@ class DevServices extends Command implements SignalableCommandInterface
 
         $ngrokUrl = str_replace('https://', '', $ngrokUrl);
 
-        for ($i = 0; $i < $this->numQueueWorkers; $i++) {
-            $this->info('Starting queue worker #' . $i);
-            $queueWorker = new Process(['php', 'artisan', 'queue:work']);
-            $queueWorker->start();
-            $this->info('Queue worker started.');
-            $this->queueWorkers[] = $queueWorker;
-        }
+        $this->info('Starting horizon');
+        $horizon = new Process(['php', 'artisan', 'horizon']);
 
         $this->info('Starting queue ngrok...');
         $ngrok = new Process(['valet', 'share', '--domain=' . $ngrokUrl]);
@@ -73,11 +65,9 @@ class DevServices extends Command implements SignalableCommandInterface
         if ($ngrok->isRunning()) {
             $ngrok->signal(SIGINT);
         }
-        collect($this->queueWorkers)->each(function($worker) {
-            if ($worker->isRunning()) {
-                $worker->signal(SIGINT);
-            }
-        });
+        if ($horizon->isRunning()) {
+            $horizon->signal(SIGINT);
+        }
     }
 
     public function getSubscribedSignals(): array

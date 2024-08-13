@@ -40,14 +40,14 @@ class GenerateImages implements ShouldQueue
         $callables = $this->story->images->map(function(Image $image) use ($replicate) {
             return function () use ($image, $replicate) {
                 $prompt = new DescribeScene($this->story->content, $image->paragraph, $this->story->creative_direction);
-                $tokens = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
+                $tokens = $replicate->run(config('models.llm'), [
                     'prompt' => $prompt->get(),
                 ]);
                 $imagePrompt = collect($tokens)->implode('');
                 $image->update([
                     'prompt' => $imagePrompt,
                 ]);
-                $res = $replicate->run('black-forest-labs/flux-schnell', [
+                $res = $replicate->run(config('models.diffuser'), [
                     'prompt' => $imagePrompt,
                     'aspect_ratio' => '9:16',
                     'disable_safety_checker' => true,

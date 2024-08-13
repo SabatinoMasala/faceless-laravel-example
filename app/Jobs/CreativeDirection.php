@@ -29,7 +29,7 @@ class CreativeDirection extends MockableJob implements ShouldQueue
     public function execute(Replicate $replicate)
     {
         $prompt = new \App\Prompts\CreativeDirection($this->story->content, $this->story->series);
-        $output = $replicate->run('meta/meta-llama-3.1-405b-instruct', [
+        $output = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,
         ]);
