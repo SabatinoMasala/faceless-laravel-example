@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StoriesController;
+use App\Http\Resources\StoryResource;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -10,7 +11,7 @@ use Inertia\Inertia;
 
 Route::get('/api/stories/{story}', function(Story $story) {
     $story->load('images');
-    return $story;
+    return StoryResource::make($story);
 });
 
 Route::get('/', function () {
