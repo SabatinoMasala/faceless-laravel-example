@@ -3,13 +3,13 @@
 namespace App\Jobs;
 
 use App\Models\Story;
+use Illuminate\Bus\Batchable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
-use Illuminate\Support\Facades\Bus;
 
 class GenerateImages implements ShouldQueue
 {
-    use Queueable;
+    use Queueable, Batchable;
 
     public $timeout = 600;
 
@@ -37,20 +37,10 @@ class GenerateImages implements ShouldQueue
             ]);
         });
 
-        $batch = collect($this->story->images)->map(function($image) {
-            return new GenerateImage($this->story, $image);
-        })->toArray();
-
-
-        $this->appendToChain(function() use ($batch) {
-            return Bus::batch($batch)
-                ->then(function() {
-                    \Log::info('done');
-                })->dispatch();
+        collect($this->story->images)->each(function($image) {
+            $this->batch()->add(new GenerateImage($this->story, $image));
         });
     }
-
-
 
     public function failed()
     {

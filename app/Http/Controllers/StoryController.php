@@ -30,7 +30,9 @@ class StoryController extends Controller
             new TranscribeAudio($story),
             new ChunkTranscript($story),
             new CreativeDirection($story),
-            new GenerateImages($story),
+            Bus::batch([
+                new GenerateImages($story),
+            ]),
             new RenderVideo($story)
         ])->dispatch();
         return response()->redirectTo('/story/' . $story->id);
@@ -38,7 +40,6 @@ class StoryController extends Controller
 
     public function show(Story $story)
     {
-        dispatch(new GenerateImages($story));
         $story->load('images');
         return Inertia::render('Story/Show', [
             'story' => $story
