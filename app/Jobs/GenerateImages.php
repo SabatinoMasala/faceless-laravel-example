@@ -44,7 +44,14 @@ class GenerateImages implements ShouldQueue
             return new GenerateImage($this->story, $image);
         });
 
-        // Workaround for https://github.com/laravel/framework/issues/52468
+        /**
+         * Ideally, we're able to call $this->prependToChain(Bus::batch($jobs));
+         * However, it seems the instance of Bus::batch($jobs) is of type PendingBatch instead of ChainedBatch
+         * Bug ticket: https://github.com/laravel/framework/issues/52468
+         * PR that changes this behaviour: https://github.com/laravel/framework/pull/52486
+         *
+         * For now, we'll have to create a new instance of ChainedBatch manually and prepend it to the chain
+         */
         $chainedBatch = new ChainedBatch(Bus::batch($jobs));
         $this->prependToChain($chainedBatch);
     }
