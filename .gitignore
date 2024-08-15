@@ -8,6 +8,7 @@
 /storage/*.key
 /vendor
 .env
+/faceless/.env
 .env.backup
 .env.production
 .phpactor.json

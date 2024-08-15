@@ -5,11 +5,12 @@
   "repository": {},
   "license": "UNLICENSED",
   "dependencies": {
-    "@remotion/cli": "4.0.194",
-    "@remotion/google-fonts": "^4.0.194",
+    "@remotion/cli": "4.0.199",
+    "@remotion/google-fonts": "4.0.199",
+    "@remotion/lambda": "4.0.199",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "4.0.194",
+    "remotion": "4.0.199",
     "zod": "3.22.3"
   },
   "devDependencies": {
