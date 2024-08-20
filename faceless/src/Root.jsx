@@ -10,11 +10,17 @@ export const RemotionRoot = () => {
 				width={1080}
 				height={1920}
                 calculateMetadata={async ({ props }) => {
-                    const data = await fetch(props.json);
-                    const json = await data.json();
+                    const fps = props.fps ? props.fps : 30;
+                    let json;
+                    if (!props.json) {
+                        json = require('./example.json');
+                    } else {
+                        const data = await fetch(props.json);
+                        json = await data.json();
+                    }
                     return {
-                        fps: props.fps,
-                        durationInFrames: Math.ceil(json.duration_in_seconds * props.fps),
+                        fps,
+                        durationInFrames: Math.ceil(json.duration_in_seconds * fps),
                         props: {
                             ...props,
                             data: json,
