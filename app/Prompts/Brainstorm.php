@@ -28,6 +28,6 @@ Only respond with a list of titles, no other information.
 A good title consists of 4-8 words.
 Do not number the list.
 You will be penalized if the language is not {language}
-The story should fit in the series {series}';
+The story should fit in the series: {series}';
     }
 }

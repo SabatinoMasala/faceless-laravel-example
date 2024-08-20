@@ -10,6 +10,7 @@ class GenerateStory extends BasePrompt
     public function __construct(
         public string $language,
         public string $title,
+        public string $series,
         public int $maxCharacters = 1200,
     ){}
 
@@ -24,6 +25,7 @@ You will be penalized if the maximum amount of characters exceeds {maxCharacters
 
 ### Prompt ###
 Write a story with the title: {title}
+The story should fit in the series: {series}
 ';
     }
 }

@@ -46,7 +46,11 @@ class GenerateStory extends MockableJob implements ShouldQueue
 
     public function execute(Replicate $replicate)
     {
-        $prompt = new \App\Prompts\GenerateStory($this->story->language, $this->story->title);
+        $prompt = new \App\Prompts\GenerateStory(
+            $this->story->language,
+            $this->story->title,
+            $this->story->series,
+        );
         $output = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
             'max_tokens' => 1000,

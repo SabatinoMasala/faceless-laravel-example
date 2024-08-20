@@ -1,8 +1,7 @@
 {
-    "series": "Roman empire",
     "language": "English",
-    "title": "The Roman Forum's Bustling Marketplace",
-    "duration_in_seconds": 101.976,
+    "title": "Rome's Darkest Hour of Need",
+    "duration_in_seconds": 97.824,
     "voice_over_transcription": {
         "chunks": [
             {
@@ -23,1958 +22,1879 @@
                 "text": " sun",
                 "timestamp": [
                     0.22,
-                    0.46
+                    0.44
                 ]
             },
             {
-                "text": " rose",
+                "text": " set",
                 "timestamp": [
-                    0.46,
-                    0.72
+                    0.44,
+                    0.68
                 ]
             },
             {
                 "text": " over",
                 "timestamp": [
-                    0.72,
-                    1.12
+                    0.68,
+                    1.02
                 ]
             },
             {
                 "text": " the",
                 "timestamp": [
-                    1.12,
-                    1.26
+                    1.02,
+                    1.2
                 ]
             },
             {
-                "text": " Roman",
+                "text": " Eternal",
                 "timestamp": [
-                    1.26,
+                    1.2,
                     1.46
                 ]
             },
             {
-                "text": " Forum,",
+                "text": " City,",
                 "timestamp": [
                     1.46,
-                    2.06
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    2.06,
-                    2.28
-                ]
-            },
-            {
-                "text": " air",
-                "timestamp": [
-                    2.28,
-                    2.48
-                ]
-            },
-            {
-                "text": " was",
-                "timestamp": [
-                    2.48,
-                    2.66
-                ]
-            },
-            {
-                "text": " filled",
-                "timestamp": [
-                    2.66,
-                    2.92
-                ]
-            },
-            {
-                "text": " with",
-                "timestamp": [
-                    2.92,
-                    3.18
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    3.18,
-                    3.3
-                ]
-            },
-            {
-                "text": " sound",
-                "timestamp": [
-                    3.3,
-                    3.68
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    3.68,
-                    3.94
-                ]
-            },
-            {
-                "text": " merchants",
-                "timestamp": [
-                    3.94,
-                    4.28
-                ]
-            },
-            {
-                "text": " calling",
-                "timestamp": [
-                    4.28,
-                    4.72
-                ]
-            },
-            {
-                "text": " out",
-                "timestamp": [
-                    4.72,
-                    5.1
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    5.1,
-                    5.28
-                ]
-            },
-            {
-                "text": " daily",
-                "timestamp": [
-                    5.28,
-                    5.5
-                ]
-            },
-            {
-                "text": " specials.",
-                "timestamp": [
-                    5.5,
-                    6.28
-                ]
-            },
-            {
-                "text": " The",
-                "timestamp": [
-                    6.28,
-                    6.66
-                ]
-            },
-            {
-                "text": " smell",
-                "timestamp": [
-                    6.66,
-                    6.96
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    6.96,
-                    7.22
-                ]
-            },
-            {
-                "text": " freshly",
-                "timestamp": [
-                    7.22,
-                    7.48
-                ]
-            },
-            {
-                "text": " baked",
-                "timestamp": [
-                    7.48,
-                    7.9
-                ]
-            },
-            {
-                "text": " bread",
-                "timestamp": [
-                    7.9,
-                    8.22
-                ]
-            },
-            {
-                "text": " wafted",
-                "timestamp": [
-                    8.22,
-                    8.94
-                ]
-            },
-            {
-                "text": " through",
-                "timestamp": [
-                    8.94,
-                    9.14
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    9.14,
-                    9.26
-                ]
-            },
-            {
-                "text": " crowded",
-                "timestamp": [
-                    9.26,
-                    9.56
-                ]
-            },
-            {
-                "text": " streets,",
-                "timestamp": [
-                    9.56,
-                    10.36
-                ]
-            },
-            {
-                "text": " enticing",
-                "timestamp": [
-                    10.36,
-                    11.5
-                ]
-            },
-            {
-                "text": " passersby",
-                "timestamp": [
-                    11.5,
-                    12.18
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    12.18,
-                    12.42
-                ]
-            },
-            {
-                "text": " stop",
-                "timestamp": [
-                    12.42,
-                    12.76
-                ]
-            },
-            {
-                "text": " and",
-                "timestamp": [
-                    12.76,
-                    13.04
-                ]
-            },
-            {
-                "text": " sample",
-                "timestamp": [
-                    13.04,
-                    13.5
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    13.5,
-                    13.68
-                ]
-            },
-            {
-                "text": " warm",
-                "timestamp": [
-                    13.68,
-                    13.94
-                ]
-            },
-            {
-                "text": " loaves.",
-                "timestamp": [
-                    13.94,
-                    14.82
-                ]
-            },
-            {
-                "text": " Amidst",
-                "timestamp": [
-                    14.82,
-                    16.06
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    16.06,
-                    16.16
-                ]
-            },
-            {
-                "text": " bustling",
-                "timestamp": [
-                    16.16,
-                    16.6
-                ]
-            },
-            {
-                "text": " marketplace,",
-                "timestamp": [
-                    16.6,
-                    17.46
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    17.46,
-                    17.76
-                ]
-            },
-            {
-                "text": " young",
-                "timestamp": [
-                    17.76,
-                    17.98
-                ]
-            },
-            {
-                "text": " girl",
-                "timestamp": [
-                    17.98,
-                    18.24
-                ]
-            },
-            {
-                "text": " named",
-                "timestamp": [
-                    18.24,
-                    18.46
-                ]
-            },
-            {
-                "text": " Aurelia",
-                "timestamp": [
-                    18.46,
-                    18.9
-                ]
-            },
-            {
-                "text": " dodged",
-                "timestamp": [
-                    18.9,
-                    19.5
-                ]
-            },
-            {
-                "text": " shoppers",
-                "timestamp": [
-                    19.5,
-                    19.94
-                ]
-            },
-            {
-                "text": " and",
-                "timestamp": [
-                    19.94,
-                    20.06
-                ]
-            },
-            {
-                "text": " traders,",
-                "timestamp": [
-                    20.06,
-                    20.6
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    20.6,
-                    20.74
-                ]
-            },
-            {
-                "text": " bright",
-                "timestamp": [
-                    20.74,
-                    21.04
-                ]
-            },
-            {
-                "text": " blue",
-                "timestamp": [
-                    21.04,
-                    21.24
-                ]
-            },
-            {
-                "text": " tunic",
-                "timestamp": [
-                    21.24,
-                    21.78
-                ]
-            },
-            {
-                "text": " standing",
-                "timestamp": [
-                    21.78,
-                    22.1
-                ]
-            },
-            {
-                "text": " out",
-                "timestamp": [
-                    22.1,
-                    22.52
-                ]
-            },
-            {
-                "text": " among",
-                "timestamp": [
-                    22.54,
-                    22.8
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    22.8,
-                    23
-                ]
-            },
-            {
-                "text": " sea",
-                "timestamp": [
-                    23,
-                    23.22
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    23.22,
-                    23.44
-                ]
-            },
-            {
-                "text": " earth",
-                "timestamp": [
-                    23.44,
-                    23.7
-                ]
-            },
-            {
-                "text": "-toned",
-                "timestamp": [
-                    23.7,
-                    24.16
-                ]
-            },
-            {
-                "text": " robes.",
-                "timestamp": [
-                    24.16,
-                    24.72
-                ]
-            },
-            {
-                "text": " She",
-                "timestamp": [
-                    24.72,
-                    25.3
-                ]
-            },
-            {
-                "text": " weaved",
-                "timestamp": [
-                    25.3,
-                    25.76
-                ]
-            },
-            {
-                "text": " past",
-                "timestamp": [
-                    25.76,
-                    25.96
-                ]
-            },
-            {
-                "text": " stalls",
-                "timestamp": [
-                    25.96,
-                    26.44
-                ]
-            },
-            {
-                "text": " selling",
-                "timestamp": [
-                    26.44,
-                    26.84
-                ]
-            },
-            {
-                "text": " everything",
-                "timestamp": [
-                    26.84,
-                    27.22
-                ]
-            },
-            {
-                "text": " from",
-                "timestamp": [
-                    27.22,
-                    27.56
-                ]
-            },
-            {
-                "text": " fresh",
-                "timestamp": [
-                    27.56,
-                    27.86
-                ]
-            },
-            {
-                "text": " produce",
-                "timestamp": [
-                    27.86,
-                    28.3
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    28.3,
-                    28.76
-                ]
-            },
-            {
-                "text": " intricately",
-                "timestamp": [
-                    28.76,
-                    29.28
-                ]
-            },
-            {
-                "text": " crafted",
-                "timestamp": [
-                    29.28,
-                    29.58
-                ]
-            },
-            {
-                "text": " jewelry,",
-                "timestamp": [
-                    29.58,
-                    30.36
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    30.36,
-                    30.88
-                ]
-            },
-            {
-                "text": " eyes",
-                "timestamp": [
-                    30.88,
-                    31.22
-                ]
-            },
-            {
-                "text": " scanning",
-                "timestamp": [
-                    31.22,
-                    31.58
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    31.58,
-                    31.84
-                ]
-            },
-            {
-                "text": " crowds",
-                "timestamp": [
-                    31.84,
-                    32.12
-                ]
-            },
-            {
-                "text": " for",
-                "timestamp": [
-                    32.12,
-                    32.34
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    32.34,
-                    32.46
-                ]
-            },
-            {
-                "text": " father's",
-                "timestamp": [
-                    32.46,
-                    32.9
-                ]
-            },
-            {
-                "text": " familiar",
-                "timestamp": [
-                    32.9,
-                    33.16
-                ]
-            },
-            {
-                "text": " face.",
-                "timestamp": [
-                    33.16,
-                    33.98
-                ]
-            },
-            {
-                "text": " As",
-                "timestamp": [
-                    33.98,
-                    34.72
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    34.72,
-                    34.84
-                ]
-            },
-            {
-                "text": " merchant",
-                "timestamp": [
-                    34.84,
-                    35.04
-                ]
-            },
-            {
-                "text": " himself,",
-                "timestamp": [
-                    35.04,
-                    35.72
-                ]
-            },
-            {
-                "text": " he",
-                "timestamp": [
-                    35.72,
-                    35.96
-                ]
-            },
-            {
-                "text": " had",
-                "timestamp": [
-                    35.96,
-                    36.1
-                ]
-            },
-            {
-                "text": " promised",
-                "timestamp": [
-                    36.1,
-                    36.4
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    36.4,
-                    36.62
-                ]
-            },
-            {
-                "text": " meet",
-                "timestamp": [
-                    36.62,
-                    36.8
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    36.8,
-                    37
-                ]
-            },
-            {
-                "text": " at",
-                "timestamp": [
-                    37,
-                    37.26
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    37.26,
-                    37.32
-                ]
-            },
-            {
-                "text": " Forum's",
-                "timestamp": [
-                    37.32,
-                    37.76
-                ]
-            },
-            {
-                "text": " central",
-                "timestamp": [
-                    37.76,
-                    38.02
-                ]
-            },
-            {
-                "text": " fountain",
-                "timestamp": [
-                    38.02,
-                    38.52
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    38.52,
-                    39
-                ]
-            },
-            {
-                "text": " show",
-                "timestamp": [
-                    39,
-                    39.2
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    39.2,
-                    39.36
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    39.36,
-                    39.5
-                ]
-            },
-            {
-                "text": " latest",
-                "timestamp": [
-                    39.5,
-                    39.8
-                ]
-            },
-            {
-                "text": " shipment",
-                "timestamp": [
-                    39.8,
-                    40.26
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    40.26,
-                    40.62
-                ]
-            },
-            {
-                "text": " exotic",
-                "timestamp": [
-                    40.62,
-                    40.98
-                ]
-            },
-            {
-                "text": " spices",
-                "timestamp": [
-                    40.98,
-                    41.4
-                ]
-            },
-            {
-                "text": " from",
-                "timestamp": [
-                    41.4,
-                    41.86
-                ]
-            },
-            {
-                "text": " Egypt.",
-                "timestamp": [
-                    41.86,
-                    42.54
-                ]
-            },
-            {
-                "text": " As",
-                "timestamp": [
-                    42.54,
-                    43.46
-                ]
-            },
-            {
-                "text": " she",
-                "timestamp": [
-                    43.46,
-                    43.68
-                ]
-            },
-            {
-                "text": " waited,",
-                "timestamp": [
-                    43.68,
-                    44.24
-                ]
-            },
-            {
-                "text": " Aurelia",
-                "timestamp": [
-                    44.24,
-                    44.74
-                ]
-            },
-            {
-                "text": " watched",
-                "timestamp": [
-                    44.74,
-                    45.08
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    45.06,
-                    45.3
-                ]
-            },
-            {
-                "text": " group",
-                "timestamp": [
-                    45.3,
-                    45.46
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    45.46,
-                    45.66
-                ]
-            },
-            {
-                "text": " senators,",
-                "timestamp": [
-                    45.66,
-                    46.32
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    46.32,
-                    46.54
-                ]
-            },
-            {
-                "text": " togas",
-                "timestamp": [
-                    46.54,
-                    46.96
-                ]
-            },
-            {
-                "text": " draped",
-                "timestamp": [
-                    46.96,
-                    47.4
-                ]
-            },
-            {
-                "text": " elegantly",
-                "timestamp": [
-                    47.4,
-                    47.98
-                ]
-            },
-            {
-                "text": " over",
-                "timestamp": [
-                    47.98,
-                    48.2
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    48.2,
-                    48.36
-                ]
-            },
-            {
-                "text": " shoulders,",
-                "timestamp": [
-                    48.36,
-                    49.04
-                ]
-            },
-            {
-                "text": " haggling",
-                "timestamp": [
-                    49.04,
-                    49.72
-                ]
-            },
-            {
-                "text": " with",
-                "timestamp": [
-                    49.72,
-                    49.86
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    49.86,
-                    49.96
-                ]
-            },
-            {
-                "text": " vendor",
-                "timestamp": [
-                    49.96,
-                    50.24
-                ]
-            },
-            {
-                "text": " over",
-                "timestamp": [
-                    50.24,
-                    50.6
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    50.6,
-                    50.74
-                ]
-            },
-            {
-                "text": " price",
-                "timestamp": [
-                    50.74,
-                    51.06
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    51.06,
-                    51.24
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    51.24,
-                    51.34
-                ]
-            },
-            {
-                "text": " rare",
-                "timestamp": [
-                    51.34,
-                    51.56
-                ]
-            },
-            {
-                "text": " scroll.",
-                "timestamp": [
-                    51.56,
-                    52.4
-                ]
-            },
-            {
-                "text": " Nearby,",
-                "timestamp": [
-                    52.4,
-                    53.7
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    53.7,
-                    54.2
-                ]
-            },
-            {
-                "text": " musician",
-                "timestamp": [
-                    54.2,
-                    54.56
-                ]
-            },
-            {
-                "text": " plucked",
-                "timestamp": [
-                    54.56,
-                    55.08
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    55.08,
-                    55.14
-                ]
-            },
-            {
-                "text": " strings",
-                "timestamp": [
-                    55.14,
-                    55.46
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    55.46,
-                    55.68
-                ]
-            },
-            {
-                "text": " his",
-                "timestamp": [
-                    55.68,
-                    55.82
-                ]
-            },
-            {
-                "text": " lyre,",
-                "timestamp": [
-                    55.82,
-                    56.34
-                ]
-            },
-            {
-                "text": " drawing",
-                "timestamp": [
-                    56.34,
-                    56.82
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    56.82,
-                    56.98
-                ]
-            },
-            {
-                "text": " small",
-                "timestamp": [
-                    56.98,
-                    57.2
-                ]
-            },
-            {
-                "text": " crowd",
-                "timestamp": [
-                    57.2,
-                    57.58
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    57.58,
-                    57.8
-                ]
-            },
-            {
-                "text": " onlookers",
-                "timestamp": [
-                    57.8,
-                    58.32
-                ]
-            },
-            {
-                "text": " who",
-                "timestamp": [
-                    58.32,
-                    58.46
-                ]
-            },
-            {
-                "text": " tossed",
-                "timestamp": [
-                    58.46,
-                    58.76
-                ]
-            },
-            {
-                "text": " coins",
-                "timestamp": [
-                    58.76,
-                    59.18
-                ]
-            },
-            {
-                "text": " into",
-                "timestamp": [
-                    59.18,
-                    59.74
-                ]
-            },
-            {
-                "text": " his",
-                "timestamp": [
-                    59.74,
-                    59.92
-                ]
-            },
-            {
-                "text": " hat.",
-                "timestamp": [
-                    59.92,
-                    60.52
-                ]
-            },
-            {
-                "text": " Just",
-                "timestamp": [
-                    60.52,
-                    61.12
-                ]
-            },
-            {
-                "text": " as",
-                "timestamp": [
-                    61.12,
-                    61.3
-                ]
-            },
-            {
-                "text": " Aurelia",
-                "timestamp": [
-                    61.3,
-                    61.66
-                ]
-            },
-            {
-                "text": " was",
-                "timestamp": [
-                    61.66,
-                    61.94
-                ]
-            },
-            {
-                "text": " starting",
-                "timestamp": [
-                    61.94,
-                    62.18
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    62.18,
-                    62.4
-                ]
-            },
-            {
-                "text": " worry",
-                "timestamp": [
-                    62.4,
-                    62.68
-                ]
-            },
-            {
-                "text": " that",
-                "timestamp": [
-                    62.68,
-                    62.86
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    62.86,
-                    63
-                ]
-            },
-            {
-                "text": " father",
-                "timestamp": [
-                    63,
-                    63.26
-                ]
-            },
-            {
-                "text": " had",
-                "timestamp": [
-                    63.26,
-                    63.48
-                ]
-            },
-            {
-                "text": " forgotten",
-                "timestamp": [
-                    63.48,
-                    63.76
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    63.76,
-                    64.08
-                ]
-            },
-            {
-                "text": " meeting,",
-                "timestamp": [
-                    64.08,
-                    64.6
-                ]
-            },
-            {
-                "text": " she",
-                "timestamp": [
-                    64.6,
-                    65.02
-                ]
-            },
-            {
-                "text": " spotted",
-                "timestamp": [
-                    65.02,
-                    65.38
-                ]
-            },
-            {
-                "text": " him",
-                "timestamp": [
-                    65.38,
-                    65.56
-                ]
-            },
-            {
-                "text": " hurrying",
-                "timestamp": [
-                    65.56,
-                    65.88
-                ]
-            },
-            {
-                "text": " towards",
-                "timestamp": [
-                    65.88,
-                    66.12
-                ]
-            },
-            {
-                "text": " her.",
-                "timestamp": [
-                    66.12,
-                    66.54
-                ]
-            },
-            {
-                "text": " A",
-                "timestamp": [
-                    66.54,
-                    67.02
-                ]
-            },
-            {
-                "text": " large",
-                "timestamp": [
-                    67.02,
-                    67.32
-                ]
-            },
-            {
-                "text": " crate",
-                "timestamp": [
-                    67.32,
-                    67.62
-                ]
-            },
-            {
-                "text": " slung",
-                "timestamp": [
-                    67.62,
-                    68.22
-                ]
-            },
-            {
-                "text": " over",
-                "timestamp": [
-                    68.22,
-                    68.4
-                ]
-            },
-            {
-                "text": " his",
-                "timestamp": [
-                    68.4,
-                    68.56
-                ]
-            },
-            {
-                "text": " shoulder.",
-                "timestamp": [
-                    68.56,
-                    69.28
-                ]
-            },
-            {
-                "text": " Aurelia,",
-                "timestamp": [
-                    69.28,
-                    70.46
-                ]
-            },
-            {
-                "text": " my",
-                "timestamp": [
-                    70.46,
-                    70.62
-                ]
-            },
-            {
-                "text": " dear,",
-                "timestamp": [
-                    70.62,
-                    71.16
-                ]
-            },
-            {
-                "text": " he",
-                "timestamp": [
-                    71.16,
-                    72.1
-                ]
-            },
-            {
-                "text": " exclaimed,",
-                "timestamp": [
-                    72.1,
-                    72.74
-                ]
-            },
-            {
-                "text": " setting",
-                "timestamp": [
-                    72.74,
-                    73.12
-                ]
-            },
-            {
-                "text": " down",
-                "timestamp": [
-                    73.12,
-                    73.4
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    73.4,
-                    73.6
-                ]
-            },
-            {
-                "text": " crate",
-                "timestamp": [
-                    73.6,
-                    73.84
-                ]
-            },
-            {
-                "text": " and",
-                "timestamp": [
-                    73.84,
-                    74.06
-                ]
-            },
-            {
-                "text": " opening",
-                "timestamp": [
-                    74.06,
-                    74.46
-                ]
-            },
-            {
-                "text": " it",
-                "timestamp": [
-                    74.46,
-                    74.7
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    74.7,
-                    74.88
-                ]
-            },
-            {
-                "text": " reveal",
-                "timestamp": [
-                    74.88,
-                    75.12
-                ]
-            },
-            {
-                "text": " an",
-                "timestamp": [
-                    75.12,
-                    75.34
-                ]
-            },
-            {
-                "text": " assortment",
-                "timestamp": [
-                    75.34,
-                    75.78
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    75.78,
-                    75.94
-                ]
-            },
-            {
-                "text": " colorful",
-                "timestamp": [
-                    75.94,
-                    76.18
-                ]
-            },
-            {
-                "text": " spices",
-                "timestamp": [
-                    76.18,
-                    76.68
-                ]
-            },
-            {
-                "text": " and",
-                "timestamp": [
-                    76.68,
-                    77.2
-                ]
-            },
-            {
-                "text": " fragrant",
-                "timestamp": [
-                    77.2,
-                    77.62
-                ]
-            },
-            {
-                "text": " herbs.",
-                "timestamp": [
-                    77.62,
-                    78.46
-                ]
-            },
-            {
-                "text": " Together,",
-                "timestamp": [
-                    78.46,
-                    79.36
-                ]
-            },
-            {
-                "text": " they",
-                "timestamp": [
-                    79.36,
-                    80
-                ]
-            },
-            {
-                "text": " spent",
-                "timestamp": [
-                    80,
-                    80.24
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    80.24,
-                    80.4
-                ]
-            },
-            {
-                "text": " morning",
-                "timestamp": [
-                    80.4,
-                    80.62
-                ]
-            },
-            {
-                "text": " selling",
-                "timestamp": [
-                    80.62,
-                    80.9
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    80.9,
-                    81.22
-                ]
-            },
-            {
-                "text": " wares",
-                "timestamp": [
-                    81.22,
-                    81.46
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    81.46,
-                    81.6
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    81.6,
-                    81.7
-                ]
-            },
-            {
-                "text": " eager",
-                "timestamp": [
-                    81.7,
-                    81.96
-                ]
-            },
-            {
-                "text": " shoppers.",
-                "timestamp": [
-                    81.96,
-                    82.68
-                ]
-            },
-            {
-                "text": " The",
-                "timestamp": [
-                    82.68,
-                    83.18
-                ]
-            },
-            {
-                "text": " sounds",
-                "timestamp": [
-                    83.18,
-                    83.62
-                ]
-            },
-            {
-                "text": " and",
-                "timestamp": [
-                    83.62,
-                    83.76
-                ]
-            },
-            {
-                "text": " smells",
-                "timestamp": [
-                    83.76,
-                    84.14
-                ]
-            },
-            {
-                "text": " of",
-                "timestamp": [
-                    84.16,
-                    84.44
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    84.44,
-                    84.54
-                ]
-            },
-            {
-                "text": " Roman",
-                "timestamp": [
-                    84.54,
-                    84.78
-                ]
-            },
-            {
-                "text": " Forum's",
-                "timestamp": [
-                    84.78,
-                    85.34
-                ]
-            },
-            {
-                "text": " bustling",
-                "timestamp": [
-                    85.34,
-                    85.82
-                ]
-            },
-            {
-                "text": " marketplace",
-                "timestamp": [
-                    85.82,
-                    86.2
-                ]
-            },
-            {
-                "text": " creating",
-                "timestamp": [
-                    86.2,
-                    87.18
-                ]
-            },
-            {
-                "text": " a",
-                "timestamp": [
-                    87.18,
-                    87.52
-                ]
-            },
-            {
-                "text": " lively",
-                "timestamp": [
-                    87.52,
-                    87.92
-                ]
-            },
-            {
-                "text": " backdrop",
-                "timestamp": [
-                    87.92,
-                    88.34
-                ]
-            },
-            {
-                "text": " for",
-                "timestamp": [
-                    88.34,
-                    88.68
-                ]
-            },
-            {
-                "text": " their",
-                "timestamp": [
-                    88.68,
-                    88.82
-                ]
-            },
-            {
-                "text": " busy",
-                "timestamp": [
-                    88.82,
-                    89.02
-                ]
-            },
-            {
-                "text": " day.",
-                "timestamp": [
-                    89.02,
-                    89.7
-                ]
-            },
-            {
-                "text": " As",
-                "timestamp": [
-                    89.7,
-                    90.38
-                ]
-            },
-            {
-                "text": " the",
-                "timestamp": [
-                    90.38,
-                    90.52
-                ]
-            },
-            {
-                "text": " sun",
-                "timestamp": [
-                    90.52,
-                    90.68
-                ]
-            },
-            {
-                "text": " began",
-                "timestamp": [
-                    90.68,
-                    90.9
-                ]
-            },
-            {
-                "text": " to",
-                "timestamp": [
-                    90.9,
-                    91.1
-                ]
-            },
-            {
-                "text": " set,",
-                "timestamp": [
-                    91.1,
-                    91.48
+                    2.02
                 ]
             },
             {
                 "text": " casting",
                 "timestamp": [
-                    91.48,
-                    92.08
+                    2.02,
+                    2.46
                 ]
             },
             {
                 "text": " a",
                 "timestamp": [
-                    92.08,
-                    92.24
+                    2.46,
+                    2.62
                 ]
             },
             {
-                "text": " warm",
+                "text": " golden",
                 "timestamp": [
-                    92.24,
-                    92.54
-                ]
-            },
-            {
-                "text": " orange",
-                "timestamp": [
-                    92.54,
-                    92.86
+                    2.62,
+                    2.9
                 ]
             },
             {
                 "text": " glow",
                 "timestamp": [
-                    92.86,
-                    93.2
+                    2.9,
+                    3.22
                 ]
             },
             {
                 "text": " over",
                 "timestamp": [
-                    93.2,
-                    93.52
+                    3.22,
+                    3.68
                 ]
             },
             {
                 "text": " the",
                 "timestamp": [
-                    93.52,
-                    93.64
+                    3.68,
+                    3.82
                 ]
             },
             {
-                "text": " crowded",
+                "text": " sprawling",
                 "timestamp": [
-                    93.64,
-                    93.92
+                    3.82,
+                    4.32
                 ]
             },
             {
-                "text": " streets,",
+                "text": " metropolis,",
                 "timestamp": [
-                    93.92,
-                    94.98
+                    4.32,
+                    5.32
                 ]
             },
             {
-                "text": " Aurelia",
+                "text": " Emperor",
                 "timestamp": [
-                    94.98,
-                    95.68
+                    5.32,
+                    5.76
                 ]
             },
             {
-                "text": " smiled",
+                "text": " Aurelian",
                 "timestamp": [
-                    95.68,
-                    96
+                    5.76,
+                    6.36
                 ]
             },
             {
-                "text": " up",
+                "text": " stood",
                 "timestamp": [
-                    96,
-                    96.54
+                    6.36,
+                    6.6
+                ]
+            },
+            {
+                "text": " atop",
+                "timestamp": [
+                    6.6,
+                    7.02
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    7.02,
+                    7.2
+                ]
+            },
+            {
+                "text": " walls,",
+                "timestamp": [
+                    7.2,
+                    7.68
+                ]
+            },
+            {
+                "text": " gazing",
+                "timestamp": [
+                    7.68,
+                    8.3
+                ]
+            },
+            {
+                "text": " out",
+                "timestamp": [
+                    8.3,
+                    8.56
                 ]
             },
             {
                 "text": " at",
                 "timestamp": [
-                    96.54,
-                    96.66
-                ]
-            },
-            {
-                "text": " her",
-                "timestamp": [
-                    96.66,
-                    96.76
-                ]
-            },
-            {
-                "text": " father,",
-                "timestamp": [
-                    96.76,
-                    97.32
-                ]
-            },
-            {
-                "text": " grateful",
-                "timestamp": [
-                    97.32,
-                    98.3
-                ]
-            },
-            {
-                "text": " for",
-                "timestamp": [
-                    98.3,
-                    98.68
-                ]
-            },
-            {
-                "text": " another",
-                "timestamp": [
-                    98.68,
-                    98.9
-                ]
-            },
-            {
-                "text": " successful",
-                "timestamp": [
-                    98.9,
-                    99.38
-                ]
-            },
-            {
-                "text": " day",
-                "timestamp": [
-                    99.38,
-                    99.78
-                ]
-            },
-            {
-                "text": " in",
-                "timestamp": [
-                    99.78,
-                    100.18
+                    8.56,
+                    8.88
                 ]
             },
             {
                 "text": " the",
                 "timestamp": [
-                    100.18,
-                    100.26
+                    8.88,
+                    8.96
                 ]
             },
             {
-                "text": " heart",
+                "text": " gathering",
                 "timestamp": [
-                    100.26,
-                    100.54
+                    8.96,
+                    9.3
                 ]
             },
             {
-                "text": " of",
+                "text": " storm.",
                 "timestamp": [
-                    100.54,
-                    100.7
+                    9.3,
+                    10.1
                 ]
             },
             {
-                "text": " ancient",
+                "text": " The",
                 "timestamp": [
-                    100.7,
-                    100.88
+                    10.1,
+                    10.7
+                ]
+            },
+            {
+                "text": " once",
+                "timestamp": [
+                    10.7,
+                    10.88
+                ]
+            },
+            {
+                "text": " mighty",
+                "timestamp": [
+                    10.88,
+                    11.2
+                ]
+            },
+            {
+                "text": " Roman",
+                "timestamp": [
+                    11.2,
+                    11.58
+                ]
+            },
+            {
+                "text": " Empire",
+                "timestamp": [
+                    11.58,
+                    11.98
+                ]
+            },
+            {
+                "text": " was",
+                "timestamp": [
+                    11.98,
+                    12.28
+                ]
+            },
+            {
+                "text": " crumbling,",
+                "timestamp": [
+                    12.28,
+                    12.92
+                ]
+            },
+            {
+                "text": " its",
+                "timestamp": [
+                    12.92,
+                    13.38
+                ]
+            },
+            {
+                "text": " borders",
+                "timestamp": [
+                    13.38,
+                    13.78
+                ]
+            },
+            {
+                "text": " beset",
+                "timestamp": [
+                    13.78,
+                    14.28
+                ]
+            },
+            {
+                "text": " on",
+                "timestamp": [
+                    14.28,
+                    14.46
+                ]
+            },
+            {
+                "text": " all",
+                "timestamp": [
+                    14.46,
+                    14.74
+                ]
+            },
+            {
+                "text": " sides",
+                "timestamp": [
+                    14.74,
+                    15.12
+                ]
+            },
+            {
+                "text": " by",
+                "timestamp": [
+                    15.12,
+                    15.48
+                ]
+            },
+            {
+                "text": " barbarian",
+                "timestamp": [
+                    15.48,
+                    16.12
+                ]
+            },
+            {
+                "text": " hordes",
+                "timestamp": [
+                    16.12,
+                    16.74
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    16.74,
+                    16.82
+                ]
+            },
+            {
+                "text": " internal",
+                "timestamp": [
+                    16.82,
+                    17.08
+                ]
+            },
+            {
+                "text": " strife.",
+                "timestamp": [
+                    17.08,
+                    17.88
+                ]
+            },
+            {
+                "text": " The",
+                "timestamp": [
+                    17.88,
+                    18.5
+                ]
+            },
+            {
+                "text": " people",
+                "timestamp": [
+                    18.5,
+                    18.7
+                ]
+            },
+            {
+                "text": " were",
+                "timestamp": [
+                    18.7,
+                    18.9
+                ]
+            },
+            {
+                "text": " hungry,",
+                "timestamp": [
+                    18.9,
+                    19.42
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    19.42,
+                    19.82
+                ]
+            },
+            {
+                "text": " treasury",
+                "timestamp": [
+                    19.82,
+                    20.18
+                ]
+            },
+            {
+                "text": " was",
+                "timestamp": [
+                    20.18,
+                    20.46
+                ]
+            },
+            {
+                "text": " depleted,",
+                "timestamp": [
+                    20.46,
+                    21.12
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    21.12,
+                    21.52
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    21.52,
+                    21.6
+                ]
+            },
+            {
+                "text": " gods",
+                "timestamp": [
+                    21.6,
+                    21.92
+                ]
+            },
+            {
+                "text": " seemed",
+                "timestamp": [
+                    21.92,
+                    22.32
+                ]
+            },
+            {
+                "text": " to",
+                "timestamp": [
+                    22.32,
+                    22.5
+                ]
+            },
+            {
+                "text": " have",
+                "timestamp": [
+                    22.5,
+                    22.62
+                ]
+            },
+            {
+                "text": " turned",
+                "timestamp": [
+                    22.62,
+                    22.88
+                ]
+            },
+            {
+                "text": " their",
+                "timestamp": [
+                    22.88,
+                    23.08
+                ]
+            },
+            {
+                "text": " backs",
+                "timestamp": [
+                    23.08,
+                    23.38
+                ]
+            },
+            {
+                "text": " on",
+                "timestamp": [
+                    23.38,
+                    23.6
                 ]
             },
             {
                 "text": " Rome.",
                 "timestamp": [
-                    100.88,
-                    101.6
+                    23.6,
+                    24.32
+                ]
+            },
+            {
+                "text": " Aurelian's",
+                "timestamp": [
+                    24.32,
+                    25.16
+                ]
+            },
+            {
+                "text": " thoughts",
+                "timestamp": [
+                    25.16,
+                    25.38
+                ]
+            },
+            {
+                "text": " were",
+                "timestamp": [
+                    25.38,
+                    25.64
+                ]
+            },
+            {
+                "text": " interrupted",
+                "timestamp": [
+                    25.64,
+                    26.08
+                ]
+            },
+            {
+                "text": " by",
+                "timestamp": [
+                    26.08,
+                    26.4
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    26.4,
+                    26.52
+                ]
+            },
+            {
+                "text": " arrival",
+                "timestamp": [
+                    26.52,
+                    26.96
+                ]
+            },
+            {
+                "text": " of",
+                "timestamp": [
+                    26.96,
+                    27.2
+                ]
+            },
+            {
+                "text": " his",
+                "timestamp": [
+                    27.2,
+                    27.42
+                ]
+            },
+            {
+                "text": " trusted",
+                "timestamp": [
+                    27.42,
+                    27.76
+                ]
+            },
+            {
+                "text": " advisor,",
+                "timestamp": [
+                    27.76,
+                    28.58
+                ]
+            },
+            {
+                "text": " Senator",
+                "timestamp": [
+                    28.58,
+                    29.16
+                ]
+            },
+            {
+                "text": " Marcellus.",
+                "timestamp": [
+                    29.16,
+                    29.94
+                ]
+            },
+            {
+                "text": " Sire,",
+                "timestamp": [
+                    29.94,
+                    30.56
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    30.56,
+                    30.74
+                ]
+            },
+            {
+                "text": " situation",
+                "timestamp": [
+                    30.74,
+                    31.06
+                ]
+            },
+            {
+                "text": " grows",
+                "timestamp": [
+                    31.06,
+                    31.54
+                ]
+            },
+            {
+                "text": " more",
+                "timestamp": [
+                    31.54,
+                    31.88
+                ]
+            },
+            {
+                "text": " dire",
+                "timestamp": [
+                    31.88,
+                    32.16
+                ]
+            },
+            {
+                "text": " by",
+                "timestamp": [
+                    32.16,
+                    32.38
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    32.38,
+                    32.5
+                ]
+            },
+            {
+                "text": " hour,",
+                "timestamp": [
+                    32.5,
+                    32.98
+                ]
+            },
+            {
+                "text": " Marcellus",
+                "timestamp": [
+                    32.98,
+                    33.52
+                ]
+            },
+            {
+                "text": " warned,",
+                "timestamp": [
+                    33.52,
+                    34.08
+                ]
+            },
+            {
+                "text": " his",
+                "timestamp": [
+                    34.08,
+                    34.4
+                ]
+            },
+            {
+                "text": " voice",
+                "timestamp": [
+                    34.4,
+                    34.7
+                ]
+            },
+            {
+                "text": " low",
+                "timestamp": [
+                    34.7,
+                    34.98
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    34.98,
+                    35.18
+                ]
+            },
+            {
+                "text": " urgent.",
+                "timestamp": [
+                    35.18,
+                    35.8
+                ]
+            },
+            {
+                "text": " The",
+                "timestamp": [
+                    35.8,
+                    36.4
+                ]
+            },
+            {
+                "text": " vandals",
+                "timestamp": [
+                    36.4,
+                    36.82
+                ]
+            },
+            {
+                "text": " are",
+                "timestamp": [
+                    36.82,
+                    36.96
+                ]
+            },
+            {
+                "text": " at",
+                "timestamp": [
+                    36.96,
+                    37.08
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    37.08,
+                    37.16
+                ]
+            },
+            {
+                "text": " gates,",
+                "timestamp": [
+                    37.16,
+                    37.68
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    37.68,
+                    37.96
+                ]
+            },
+            {
+                "text": " our",
+                "timestamp": [
+                    37.96,
+                    38.08
+                ]
+            },
+            {
+                "text": " legions",
+                "timestamp": [
+                    38.08,
+                    38.56
+                ]
+            },
+            {
+                "text": " are",
+                "timestamp": [
+                    38.56,
+                    38.7
+                ]
+            },
+            {
+                "text": " scattered",
+                "timestamp": [
+                    38.7,
+                    39.14
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    39.14,
+                    39.34
+                ]
+            },
+            {
+                "text": " leaderless.",
+                "timestamp": [
+                    39.34,
+                    39.92
+                ]
+            },
+            {
+                "text": " We",
+                "timestamp": [
+                    39.92,
+                    40.3
+                ]
+            },
+            {
+                "text": " must",
+                "timestamp": [
+                    40.3,
+                    40.5
+                ]
+            },
+            {
+                "text": " act",
+                "timestamp": [
+                    40.5,
+                    40.78
+                ]
+            },
+            {
+                "text": " swiftly",
+                "timestamp": [
+                    40.78,
+                    41.32
+                ]
+            },
+            {
+                "text": " or",
+                "timestamp": [
+                    41.32,
+                    41.68
+                ]
+            },
+            {
+                "text": " risk",
+                "timestamp": [
+                    41.68,
+                    41.94
+                ]
+            },
+            {
+                "text": " losing",
+                "timestamp": [
+                    41.94,
+                    42.28
+                ]
+            },
+            {
+                "text": " everything.",
+                "timestamp": [
+                    42.28,
+                    43.3
+                ]
+            },
+            {
+                "text": " Aurelian's",
+                "timestamp": [
+                    43.3,
+                    44.88
+                ]
+            },
+            {
+                "text": " jaw",
+                "timestamp": [
+                    44.88,
+                    45.04
+                ]
+            },
+            {
+                "text": " clenched",
+                "timestamp": [
+                    45.04,
+                    45.6
+                ]
+            },
+            {
+                "text": " in",
+                "timestamp": [
+                    45.6,
+                    45.76
+                ]
+            },
+            {
+                "text": " determination.",
+                "timestamp": [
+                    45.76,
+                    46.56
+                ]
+            },
+            {
+                "text": " He",
+                "timestamp": [
+                    46.56,
+                    47.24
+                ]
+            },
+            {
+                "text": " knew",
+                "timestamp": [
+                    47.24,
+                    47.44
+                ]
+            },
+            {
+                "text": " that",
+                "timestamp": [
+                    47.44,
+                    47.62
+                ]
+            },
+            {
+                "text": " Rome's",
+                "timestamp": [
+                    47.62,
+                    47.98
+                ]
+            },
+            {
+                "text": " darkest",
+                "timestamp": [
+                    47.98,
+                    48.3
+                ]
+            },
+            {
+                "text": " hour",
+                "timestamp": [
+                    48.3,
+                    48.6
+                ]
+            },
+            {
+                "text": " of",
+                "timestamp": [
+                    48.6,
+                    48.86
+                ]
+            },
+            {
+                "text": " need",
+                "timestamp": [
+                    48.86,
+                    49.06
+                ]
+            },
+            {
+                "text": " had",
+                "timestamp": [
+                    49.06,
+                    49.28
+                ]
+            },
+            {
+                "text": " arrived,",
+                "timestamp": [
+                    49.28,
+                    49.86
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    49.86,
+                    50.3
+                ]
+            },
+            {
+                "text": " that",
+                "timestamp": [
+                    50.3,
+                    50.4
+                ]
+            },
+            {
+                "text": " he",
+                "timestamp": [
+                    50.4,
+                    50.54
+                ]
+            },
+            {
+                "text": " was",
+                "timestamp": [
+                    50.54,
+                    50.72
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    50.72,
+                    50.86
+                ]
+            },
+            {
+                "text": " only",
+                "timestamp": [
+                    50.86,
+                    51.2
+                ]
+            },
+            {
+                "text": " one",
+                "timestamp": [
+                    51.2,
+                    51.46
+                ]
+            },
+            {
+                "text": " who",
+                "timestamp": [
+                    51.46,
+                    51.64
+                ]
+            },
+            {
+                "text": " could",
+                "timestamp": [
+                    51.64,
+                    51.76
+                ]
+            },
+            {
+                "text": " save",
+                "timestamp": [
+                    51.76,
+                    52.04
+                ]
+            },
+            {
+                "text": " it.",
+                "timestamp": [
+                    52.04,
+                    52.46
+                ]
+            },
+            {
+                "text": " Summoning",
+                "timestamp": [
+                    52.46,
+                    53.36
+                ]
+            },
+            {
+                "text": " every",
+                "timestamp": [
+                    53.36,
+                    53.58
+                ]
+            },
+            {
+                "text": " last",
+                "timestamp": [
+                    53.58,
+                    53.9
+                ]
+            },
+            {
+                "text": " ounce",
+                "timestamp": [
+                    53.9,
+                    54.24
+                ]
+            },
+            {
+                "text": " of",
+                "timestamp": [
+                    54.24,
+                    54.4
+                ]
+            },
+            {
+                "text": " strength",
+                "timestamp": [
+                    54.4,
+                    54.76
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    54.76,
+                    54.94
+                ]
+            },
+            {
+                "text": " cunning,",
+                "timestamp": [
+                    54.94,
+                    55.46
+                ]
+            },
+            {
+                "text": " he",
+                "timestamp": [
+                    55.46,
+                    55.88
+                ]
+            },
+            {
+                "text": " rallied",
+                "timestamp": [
+                    55.88,
+                    56.2
+                ]
+            },
+            {
+                "text": " his",
+                "timestamp": [
+                    56.2,
+                    56.36
+                ]
+            },
+            {
+                "text": " remaining",
+                "timestamp": [
+                    56.36,
+                    56.62
+                ]
+            },
+            {
+                "text": " troops",
+                "timestamp": [
+                    56.62,
+                    56.98
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    56.98,
+                    57.42
+                ]
+            },
+            {
+                "text": " launched",
+                "timestamp": [
+                    57.42,
+                    57.74
+                ]
+            },
+            {
+                "text": " a",
+                "timestamp": [
+                    57.74,
+                    57.92
+                ]
+            },
+            {
+                "text": " desperate",
+                "timestamp": [
+                    57.92,
+                    58.26
+                ]
+            },
+            {
+                "text": " counterattack",
+                "timestamp": [
+                    58.26,
+                    58.96
+                ]
+            },
+            {
+                "text": " against",
+                "timestamp": [
+                    58.96,
+                    59.38
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    59.38,
+                    59.6
+                ]
+            },
+            {
+                "text": " invaders.",
+                "timestamp": [
+                    59.6,
+                    60.3
+                ]
+            },
+            {
+                "text": " The",
+                "timestamp": [
+                    60.3,
+                    61.04
+                ]
+            },
+            {
+                "text": " battle",
+                "timestamp": [
+                    61.04,
+                    61.34
+                ]
+            },
+            {
+                "text": " raged",
+                "timestamp": [
+                    61.34,
+                    61.72
+                ]
+            },
+            {
+                "text": " on",
+                "timestamp": [
+                    61.72,
+                    61.94
+                ]
+            },
+            {
+                "text": " for",
+                "timestamp": [
+                    61.94,
+                    62.1
+                ]
+            },
+            {
+                "text": " hours,",
+                "timestamp": [
+                    62.1,
+                    62.72
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    62.72,
+                    63.06
+                ]
+            },
+            {
+                "text": " outcome",
+                "timestamp": [
+                    63.06,
+                    63.4
+                ]
+            },
+            {
+                "text": " hanging",
+                "timestamp": [
+                    63.4,
+                    63.74
+                ]
+            },
+            {
+                "text": " precariously",
+                "timestamp": [
+                    63.74,
+                    64.58
+                ]
+            },
+            {
+                "text": " in",
+                "timestamp": [
+                    64.58,
+                    64.9
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    64.9,
+                    64.98
+                ]
+            },
+            {
+                "text": " balance.",
+                "timestamp": [
+                    64.98,
+                    65.6
+                ]
+            },
+            {
+                "text": " But",
+                "timestamp": [
+                    65.6,
+                    66.38
+                ]
+            },
+            {
+                "text": " Aurelian's",
+                "timestamp": [
+                    66.38,
+                    66.96
+                ]
+            },
+            {
+                "text": " bravery",
+                "timestamp": [
+                    66.96,
+                    67.28
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    67.28,
+                    67.76
+                ]
+            },
+            {
+                "text": " tactical",
+                "timestamp": [
+                    67.76,
+                    68.2
+                ]
+            },
+            {
+                "text": " genius",
+                "timestamp": [
+                    68.2,
+                    68.64
+                ]
+            },
+            {
+                "text": " eventually",
+                "timestamp": [
+                    68.64,
+                    69.14
+                ]
+            },
+            {
+                "text": " paid",
+                "timestamp": [
+                    69.14,
+                    69.52
+                ]
+            },
+            {
+                "text": " off,",
+                "timestamp": [
+                    69.52,
+                    69.96
+                ]
+            },
+            {
+                "text": " as",
+                "timestamp": [
+                    69.96,
+                    70.46
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    70.46,
+                    70.6
+                ]
+            },
+            {
+                "text": " Vandals",
+                "timestamp": [
+                    70.6,
+                    70.98
+                ]
+            },
+            {
+                "text": " were",
+                "timestamp": [
+                    70.98,
+                    71.18
+                ]
+            },
+            {
+                "text": " repelled",
+                "timestamp": [
+                    71.18,
+                    71.72
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    71.72,
+                    71.92
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    71.92,
+                    72.04
+                ]
+            },
+            {
+                "text": " city",
+                "timestamp": [
+                    72.04,
+                    72.28
+                ]
+            },
+            {
+                "text": " was",
+                "timestamp": [
+                    72.28,
+                    72.46
+                ]
+            },
+            {
+                "text": " saved.",
+                "timestamp": [
+                    72.46,
+                    73.2
+                ]
+            },
+            {
+                "text": " As",
+                "timestamp": [
+                    73.2,
+                    74.12
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    74.12,
+                    74.26
+                ]
+            },
+            {
+                "text": " dust",
+                "timestamp": [
+                    74.26,
+                    74.46
+                ]
+            },
+            {
+                "text": " settled,",
+                "timestamp": [
+                    74.46,
+                    75.02
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    75.02,
+                    75.24
+                ]
+            },
+            {
+                "text": " emperor",
+                "timestamp": [
+                    75.24,
+                    75.52
+                ]
+            },
+            {
+                "text": " stood",
+                "timestamp": [
+                    75.52,
+                    75.82
+                ]
+            },
+            {
+                "text": " victorious,",
+                "timestamp": [
+                    75.82,
+                    76.68
+                ]
+            },
+            {
+                "text": " his",
+                "timestamp": [
+                    76.68,
+                    77.32
+                ]
+            },
+            {
+                "text": " armor",
+                "timestamp": [
+                    77.32,
+                    77.64
+                ]
+            },
+            {
+                "text": " battered",
+                "timestamp": [
+                    77.64,
+                    78.24
+                ]
+            },
+            {
+                "text": " but",
+                "timestamp": [
+                    78.24,
+                    78.36
+                ]
+            },
+            {
+                "text": " his",
+                "timestamp": [
+                    78.36,
+                    78.48
+                ]
+            },
+            {
+                "text": " spirit",
+                "timestamp": [
+                    78.48,
+                    78.82
+                ]
+            },
+            {
+                "text": " unbroken.",
+                "timestamp": [
+                    78.82,
+                    79.64
+                ]
+            },
+            {
+                "text": " For",
+                "timestamp": [
+                    79.64,
+                    80.4
+                ]
+            },
+            {
+                "text": " a",
+                "timestamp": [
+                    80.4,
+                    80.52
+                ]
+            },
+            {
+                "text": " moment,",
+                "timestamp": [
+                    80.52,
+                    80.96
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    80.96,
+                    81.2
+                ]
+            },
+            {
+                "text": " people",
+                "timestamp": [
+                    81.2,
+                    81.42
+                ]
+            },
+            {
+                "text": " of",
+                "timestamp": [
+                    81.42,
+                    81.64
+                ]
+            },
+            {
+                "text": " Rome",
+                "timestamp": [
+                    81.64,
+                    81.88
+                ]
+            },
+            {
+                "text": " forgot",
+                "timestamp": [
+                    81.88,
+                    82.16
+                ]
+            },
+            {
+                "text": " their",
+                "timestamp": [
+                    82.16,
+                    82.46
+                ]
+            },
+            {
+                "text": " troubles",
+                "timestamp": [
+                    82.46,
+                    82.8
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    82.8,
+                    83.22
+                ]
+            },
+            {
+                "text": " rejoiced",
+                "timestamp": [
+                    83.22,
+                    83.96
+                ]
+            },
+            {
+                "text": " at",
+                "timestamp": [
+                    83.96,
+                    84.14
+                ]
+            },
+            {
+                "text": " their",
+                "timestamp": [
+                    84.14,
+                    84.28
+                ]
+            },
+            {
+                "text": " narrow",
+                "timestamp": [
+                    84.28,
+                    84.56
+                ]
+            },
+            {
+                "text": " escape.",
+                "timestamp": [
+                    84.56,
+                    85.18
+                ]
+            },
+            {
+                "text": " But",
+                "timestamp": [
+                    85.18,
+                    85.6
+                ]
+            },
+            {
+                "text": " Aurelian",
+                "timestamp": [
+                    85.6,
+                    86.14
+                ]
+            },
+            {
+                "text": " knew",
+                "timestamp": [
+                    86.14,
+                    86.48
+                ]
+            },
+            {
+                "text": " that",
+                "timestamp": [
+                    86.48,
+                    86.76
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    86.76,
+                    86.88
+                ]
+            },
+            {
+                "text": " real",
+                "timestamp": [
+                    86.88,
+                    87.14
+                ]
+            },
+            {
+                "text": " work",
+                "timestamp": [
+                    87.14,
+                    87.42
+                ]
+            },
+            {
+                "text": " was",
+                "timestamp": [
+                    87.42,
+                    87.62
+                ]
+            },
+            {
+                "text": " only",
+                "timestamp": [
+                    87.62,
+                    87.86
+                ]
+            },
+            {
+                "text": " just",
+                "timestamp": [
+                    87.86,
+                    88.1
+                ]
+            },
+            {
+                "text": " beginning.",
+                "timestamp": [
+                    88.1,
+                    88.78
+                ]
+            },
+            {
+                "text": " He",
+                "timestamp": [
+                    88.78,
+                    89.34
+                ]
+            },
+            {
+                "text": " vowed",
+                "timestamp": [
+                    89.34,
+                    89.68
+                ]
+            },
+            {
+                "text": " to",
+                "timestamp": [
+                    89.68,
+                    89.78
+                ]
+            },
+            {
+                "text": " rebuild",
+                "timestamp": [
+                    89.78,
+                    90.12
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    90.12,
+                    90.56
+                ]
+            },
+            {
+                "text": " restore",
+                "timestamp": [
+                    90.56,
+                    90.9
+                ]
+            },
+            {
+                "text": " the",
+                "timestamp": [
+                    90.9,
+                    91.14
+                ]
+            },
+            {
+                "text": " empire",
+                "timestamp": [
+                    91.14,
+                    91.36
+                ]
+            },
+            {
+                "text": " to",
+                "timestamp": [
+                    91.36,
+                    91.72
+                ]
+            },
+            {
+                "text": " its",
+                "timestamp": [
+                    91.72,
+                    91.86
+                ]
+            },
+            {
+                "text": " former",
+                "timestamp": [
+                    91.86,
+                    92.12
+                ]
+            },
+            {
+                "text": " glory,",
+                "timestamp": [
+                    92.12,
+                    92.66
+                ]
+            },
+            {
+                "text": " and",
+                "timestamp": [
+                    92.66,
+                    93.24
+                ]
+            },
+            {
+                "text": " to",
+                "timestamp": [
+                    93.24,
+                    93.32
+                ]
+            },
+            {
+                "text": " ensure",
+                "timestamp": [
+                    93.32,
+                    93.58
+                ]
+            },
+            {
+                "text": " that",
+                "timestamp": [
+                    93.58,
+                    93.82
+                ]
+            },
+            {
+                "text": " Rome",
+                "timestamp": [
+                    93.82,
+                    94.12
+                ]
+            },
+            {
+                "text": " would",
+                "timestamp": [
+                    94.12,
+                    94.3
+                ]
+            },
+            {
+                "text": " never",
+                "timestamp": [
+                    94.3,
+                    94.54
+                ]
+            },
+            {
+                "text": " again",
+                "timestamp": [
+                    94.54,
+                    94.82
+                ]
+            },
+            {
+                "text": " face",
+                "timestamp": [
+                    94.82,
+                    95.16
+                ]
+            },
+            {
+                "text": " such",
+                "timestamp": [
+                    95.16,
+                    95.46
+                ]
+            },
+            {
+                "text": " a",
+                "timestamp": [
+                    95.46,
+                    95.6
+                ]
+            },
+            {
+                "text": " dark",
+                "timestamp": [
+                    95.6,
+                    95.88
+                ]
+            },
+            {
+                "text": " hour",
+                "timestamp": [
+                    95.88,
+                    96.16
+                ]
+            },
+            {
+                "text": " of",
+                "timestamp": [
+                    96.16,
+                    96.52
+                ]
+            },
+            {
+                "text": " need.",
+                "timestamp": [
+                    96.52,
+                    97.06
                 ]
             }
         ],
-        "text": " As the sun rose over the Roman Forum, the air was filled with the sound of merchants calling out their daily specials. The smell of freshly baked bread wafted through the crowded streets, enticing passersby to stop and sample the warm loaves. Amidst the bustling marketplace, a young girl named Aurelia dodged shoppers and traders, her bright blue tunic standing out among the sea of earth-toned robes. She weaved past stalls selling everything from fresh produce to intricately crafted jewelry, her eyes scanning the crowds for her father's familiar face. As a merchant himself, he had promised to meet her at the Forum's central fountain to show her the latest shipment of exotic spices from Egypt. As she waited, Aurelia watched a group of senators, their togas draped elegantly over their shoulders, haggling with a vendor over the price of a rare scroll. Nearby, a musician plucked the strings of his lyre, drawing a small crowd of onlookers who tossed coins into his hat. Just as Aurelia was starting to worry that her father had forgotten their meeting, she spotted him hurrying towards her. A large crate slung over his shoulder. Aurelia, my dear, he exclaimed, setting down the crate and opening it to reveal an assortment of colorful spices and fragrant herbs. Together, they spent the morning selling their wares to the eager shoppers. The sounds and smells of the Roman Forum's bustling marketplace creating a lively backdrop for their busy day. As the sun began to set, casting a warm orange glow over the crowded streets, Aurelia smiled up at her father, grateful for another successful day in the heart of ancient Rome."
+        "text": " As the sun set over the Eternal City, casting a golden glow over the sprawling metropolis, Emperor Aurelian stood atop the walls, gazing out at the gathering storm. The once mighty Roman Empire was crumbling, its borders beset on all sides by barbarian hordes and internal strife. The people were hungry, the treasury was depleted, and the gods seemed to have turned their backs on Rome. Aurelian's thoughts were interrupted by the arrival of his trusted advisor, Senator Marcellus. Sire, the situation grows more dire by the hour, Marcellus warned, his voice low and urgent. The vandals are at the gates, and our legions are scattered and leaderless. We must act swiftly or risk losing everything. Aurelian's jaw clenched in determination. He knew that Rome's darkest hour of need had arrived, and that he was the only one who could save it. Summoning every last ounce of strength and cunning, he rallied his remaining troops and launched a desperate counterattack against the invaders. The battle raged on for hours, the outcome hanging precariously in the balance. But Aurelian's bravery and tactical genius eventually paid off, as the Vandals were repelled and the city was saved. As the dust settled, the emperor stood victorious, his armor battered but his spirit unbroken. For a moment, the people of Rome forgot their troubles and rejoiced at their narrow escape. But Aurelian knew that the real work was only just beginning. He vowed to rebuild and restore the empire to its former glory, and to ensure that Rome would never again face such a dark hour of need."
     },
     "images": [
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/0.webp",
             "start": 0,
-            "end": 14.82
+            "end": 17.88
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/1.webp",
-            "start": 14.82,
-            "end": 33.98
+            "start": 17.88,
+            "end": 29.94
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/2.webp",
-            "start": 33.98,
-            "end": 52.4
+            "start": 29.94,
+            "end": 39.92
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/3.webp",
-            "start": 52.4,
-            "end": 66.54
+            "start": 39.92,
+            "end": 46.56
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/4.webp",
-            "start": 66.54,
-            "end": 78.46
+            "start": 46.56,
+            "end": 60.3
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/5.webp",
-            "start": 78.46,
-            "end": 89.7
+            "start": 60.3,
+            "end": 73.2
         },
         {
             "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/6.webp",
-            "start": 89.7,
-            "end": 101.6
+            "start": 73.2,
+            "end": 85.18
+        },
+        {
+            "image_path": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/7.webp",
+            "start": 85.18,
+            "end": 97.06
         }
     ],
     "voice_over_url": "https://studiowonderluscdn.s3.eu-central-1.amazonaws.com/faceless-laravel/example.mp3"
