@@ -44,6 +44,7 @@ class StoriesController extends Controller
             new ChunkTranscript($story),
             new CreativeDirection($story),
             new GenerateImages($story),
+            // -> The Batch from GenerateImages is added here
             new RenderVideo($story)
         ])->dispatch();
         return response()->redirectTo(route('stories.show', $story));
