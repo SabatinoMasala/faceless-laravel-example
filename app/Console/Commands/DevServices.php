@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Sleep;
 use Symfony\Component\Console\Command\SignalableCommandInterface;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
@@ -24,32 +23,23 @@ class DevServices extends Command implements SignalableCommandInterface
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Starts dev services';
 
     /**
      * Execute the console command.
      */
     public function handle()
     {
-        if (!env('NGROK_URL')) {
-            $ngrokUrl = 'https://' . substr(md5(rand()), 0, 12) . '.ngrok.app';
-            $this->setEnvironmentValue('NGROK_URL', $ngrokUrl);
-        } else {
-            $ngrokUrl = env('NGROK_URL');
-        }
-
-        $ngrokUrl = str_replace('https://', '', $ngrokUrl);
-
         $processes = [
+            'share' => [
+                'command' => ['php', 'artisan', 'share'],
+                'style' => ['green', null, ['bold']],
+                'logging' => true
+            ],
             'horizon' => [
                 'command' => ['php', 'artisan', 'horizon'],
                 'style' => ['cyan', null, ['bold']],
                 'logging' => true,
-            ],
-            'ngrok' => [
-                'command' => ['valet', 'share', '--subdomain=' . $ngrokUrl, '--log=stdout', '--log-level=info'],
-                'style' => ['green', null, ['bold']],
-                'logging' => false,
             ],
             'reverb' => [
                 'command' => ['php', 'artisan', 'reverb:start', '--verbose', '--debug'],
@@ -115,27 +105,6 @@ class DevServices extends Command implements SignalableCommandInterface
     {
         $this->shouldExit = true;
         return false;
-    }
-
-    protected function setEnvironmentValue($key, $value)
-    {
-        $path = base_path('.env');
-
-        if (File::exists($path)) {
-            // Read the .env file content
-            $env = File::get($path);
-
-            // Replace or append the key=value pair
-            $pattern = "/^{$key}=.*/m";
-            if (preg_match($pattern, $env)) {
-                $env = preg_replace($pattern, "{$key}={$value}", $env);
-            } else {
-                $env .= "\n{$key}={$value}";
-            }
-
-            // Save the updated content back to the .env file
-            File::put($path, $env);
-        }
     }
 
 }
