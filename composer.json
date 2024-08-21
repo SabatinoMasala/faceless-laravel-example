@@ -19,10 +19,18 @@
         "remotion/lambda": "4.0.199",
         "sabatinomasala/laravel-llm-prompt": "^1.0",
         "sabatinomasala/replicate-php": "^1.1",
+        "sabatinomasala/dev-scripts-for-laravel": "*",
         "spatie/file-system-watcher": "^1.2",
         "tightenco/ziggy": "^2.0"
     },
     "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/sabatino/www/dev-scripts-for-laravel",
+            "options": {
+                "symlink": true
+            }
+        }
     ],
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.1",
@@ -77,6 +85,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
