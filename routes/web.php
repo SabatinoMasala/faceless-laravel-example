@@ -3,7 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StoriesController;
 use App\Http\Resources\StoryResource;
-use App\Jobs\RenderVideo;
 use App\Models\Story;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;

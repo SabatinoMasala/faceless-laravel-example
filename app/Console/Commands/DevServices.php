@@ -40,6 +40,12 @@ class DevServices extends Command implements SignalableCommandInterface
                 'command' => ['php', 'artisan', 'horizon'],
                 'style' => ['cyan', null, ['bold']],
                 'logging' => true,
+                'restart' => [
+                    'watch' => [
+                        '.env',
+                        'app/Jobs/*'
+                    ]
+                ]
             ],
             'reverb' => [
                 'command' => ['php', 'artisan', 'reverb:start', '--verbose', '--debug'],
@@ -50,9 +56,9 @@ class DevServices extends Command implements SignalableCommandInterface
 
         $processes = collect($processes)->mapWithKeys(function($input, $key) {
             $this->info('Starting ' . $key);
-            $process = new Process($input['command']);
             $style = new OutputFormatterStyle(...$input['style']);
             $this->output->getFormatter()->setStyle($key, $style);
+            $process = new Process(['php', 'artisan', 'run', $key, json_encode($input)]);
             $process->start();
             return [
                 $key => [
