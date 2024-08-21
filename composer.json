@@ -20,7 +20,6 @@
         "sabatinomasala/laravel-llm-prompt": "^1.0",
         "sabatinomasala/replicate-php": "^1.1",
         "sabatinomasala/dev-scripts-for-laravel": "1.0.0",
-        "spatie/file-system-watcher": "^1.2",
         "tightenco/ziggy": "^2.0"
     },
     "require-dev": {
