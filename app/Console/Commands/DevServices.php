@@ -44,14 +44,17 @@ class DevServices extends Command implements SignalableCommandInterface
             'horizon' => [
                 'command' => ['php', 'artisan', 'horizon'],
                 'style' => ['cyan', null, ['bold']],
+                'logging' => true,
             ],
             'ngrok' => [
-                'command' => ['valet', 'share', '--domain=' . $ngrokUrl],
+                'command' => ['valet', 'share', '--subdomain=' . $ngrokUrl, '--log=stdout', '--log-level=info'],
                 'style' => ['green', null, ['bold']],
+                'logging' => false,
             ],
             'reverb' => [
                 'command' => ['php', 'artisan', 'reverb:start', '--verbose', '--debug'],
                 'style' => ['magenta', null, ['bold']],
+                'logging' => true,
             ],
         ];
 
@@ -61,15 +64,21 @@ class DevServices extends Command implements SignalableCommandInterface
             $style = new OutputFormatterStyle(...$input['style']);
             $this->output->getFormatter()->setStyle($key, $style);
             $process->start();
-            return [$key => $process];
+            return [
+                $key => [
+                    'process' => $process,
+                    'logging' => $input['logging'],
+                ]
+            ];
         });
 
         while (true) {
             if ($this->shouldExit) {
                 break;
             }
-            $processes->each(function($process, $key) {
-                if ($process->isRunning()) {
+            $processes->each(function($input, $key) {
+                $process = $input['process'];
+                if ($process->isRunning() && $input['logging']) {
                     $output = $process->getIncrementalOutput();
                     $errorOutput = $process->getIncrementalErrorOutput();
                     if (!empty($output)) {
@@ -86,7 +95,8 @@ class DevServices extends Command implements SignalableCommandInterface
             Sleep::for(1)->seconds();
         }
 
-        $processes->each(function($process, $key) {
+        $processes->each(function($input, $key) {
+            $process = $input['process'];
             if ($process->isRunning()) {
                 $process->signal(SIGINT);
             }
