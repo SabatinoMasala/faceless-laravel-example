@@ -14,10 +14,13 @@ class Brainstorm extends BasePrompt
 
     public function addHistory(array $history): void
     {
-        $this->add('Make sure the following titles are not in the list:');
-        collect($history)->each(function($line) {
-            $this->add('- ' . $line);
-        });
+        $history = collect($history)->filter();
+        if ($history->count() > 0) {
+            $this->add('Make sure the following titles are not in the list:');
+            $history->each(function($line) {
+                $this->add('- ' . $line);
+            });
+        }
     }
 
     public function getBasePrompt(): string

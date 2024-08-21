@@ -16,7 +16,8 @@ class RenderVideo implements ShouldQueue
 
     use Queueable;
 
-    public $timeout = 600;
+    public $timeout = 1200;
+    public $tries = 1;
 
     /**
      * Create a new job instance.
@@ -78,6 +79,7 @@ class RenderVideo implements ShouldQueue
                 'status' => 'COMPLETED',
             ]);
         } else {
+            \Log::error('Failed to render video');
             $this->story->update([
                 'status' => 'VIDEO_ERROR',
             ]);

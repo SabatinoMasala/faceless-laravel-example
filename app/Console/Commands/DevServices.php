@@ -58,7 +58,7 @@ class DevServices extends Command implements SignalableCommandInterface
             $this->info('Starting ' . $key);
             $style = new OutputFormatterStyle(...$input['style']);
             $this->output->getFormatter()->setStyle($key, $style);
-            $process = new Process(['php', 'artisan', 'run', $key, json_encode($input)]);
+            $process = new Process(['php', 'artisan', 'run:process', $key, json_encode($input)]);
             $process->start();
             return [
                 $key => [

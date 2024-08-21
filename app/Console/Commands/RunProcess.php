@@ -15,7 +15,7 @@ class RunProcess extends Command
      *
      * @var string
      */
-    protected $signature = 'run {key} {config}';
+    protected $signature = 'run:process {key} {config}';
 
     protected $process;
 

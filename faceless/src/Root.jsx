@@ -15,6 +15,7 @@ export const RemotionRoot = () => {
                     if (!props.json) {
                         json = require('./example.json');
                     } else {
+                        console.log(props.json);
                         const data = await fetch(props.json);
                         json = await data.json();
                     }
