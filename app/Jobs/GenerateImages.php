@@ -45,15 +45,17 @@ class GenerateImages implements ShouldQueue
         });
 
         /**
-         * Ideally, we're able to call $this->prependToChain(Bus::batch($jobs));
-         * However, it seems the instance of Bus::batch($jobs) is of type PendingBatch instead of ChainedBatch
-         * Bug ticket: https://github.com/laravel/framework/issues/52468
-         * PR that changes this behaviour: https://github.com/laravel/framework/pull/52486
+         * Before Laravel 11.21.0, we had to do the following workaround:
+         * $chainedBatch = new ChainedBatch(Bus::batch($jobs));
+         * $this->prependToChain($chainedBatch);
          *
-         * For now, we'll have to create a new instance of ChainedBatch manually and prepend it to the chain
+         * -> This was because Bus::batch($jobs) returned an instance of PendingBatch instead of ChainedBatch
+         * Bug ticket regarding this: https://github.com/laravel/framework/issues/52468
+         * PR that changes this behaviour: https://github.com/laravel/framework/pull/52486
+         * This behaviour was changed in Laravel 11.21.0, allowing us to chain the batch directly
          */
-        $chainedBatch = new ChainedBatch(Bus::batch($jobs));
-        $this->prependToChain($chainedBatch);
+
+        $this->prependToChain(Bus::batch($jobs));
     }
 
     public function failed()

@@ -9,7 +9,7 @@
         "ext-pcntl": "*",
         "inertiajs/inertia-laravel": "^1.0",
         "james-heinrich/getid3": "^1.9",
-        "laravel/framework": "^11.9",
+        "laravel/framework": "^11.21.0",
         "laravel/horizon": "^5.27",
         "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
