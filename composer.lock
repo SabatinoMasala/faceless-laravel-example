@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83781f1431d566c1700d4276825bceba",
+    "content-hash": "c546a393bed7667748545497f32457ea",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4984,11 +4984,17 @@
         },
         {
             "name": "sabatinomasala/dev-scripts-for-laravel",
-            "version": "dev-main",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SabatinoMasala/dev-scripts-for-laravel.git",
+                "reference": "73597a01d4af906b0f7a03a22495829c9e6e3d63"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/sabatino/www/dev-scripts-for-laravel",
-                "reference": "35588e1f088f027da637e863e93e76cd7ca35507"
+                "type": "zip",
+                "url": "https://api.github.com/repos/SabatinoMasala/dev-scripts-for-laravel/zipball/73597a01d4af906b0f7a03a22495829c9e6e3d63",
+                "reference": "73597a01d4af906b0f7a03a22495829c9e6e3d63",
+                "shasum": ""
             },
             "require": {
                 "laravel/framework": "^11.9",
@@ -5007,6 +5013,7 @@
                     "SabatinoMasala\\DevScriptsForLaravel\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5023,10 +5030,11 @@
                 "Dev scripts",
                 "SabatinoMasala"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/SabatinoMasala/dev-scripts-for-laravel/issues",
+                "source": "https://github.com/SabatinoMasala/dev-scripts-for-laravel/tree/1.0.0"
+            },
+            "time": "2024-08-21T14:51:36+00:00"
         },
         {
             "name": "sabatinomasala/laravel-llm-prompt",
@@ -10625,7 +10633,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
