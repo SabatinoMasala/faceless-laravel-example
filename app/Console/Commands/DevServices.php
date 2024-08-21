@@ -3,10 +3,11 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Sleep;
 use Symfony\Component\Console\Command\SignalableCommandInterface;
+use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Process\Process;
-use Illuminate\Support\Facades\File;
 
 class DevServices extends Command implements SignalableCommandInterface
 {
@@ -39,37 +40,57 @@ class DevServices extends Command implements SignalableCommandInterface
 
         $ngrokUrl = str_replace('https://', '', $ngrokUrl);
 
-        $this->info('Starting horizon');
-        $horizon = new Process(['php', 'artisan', 'horizon']);
-        $horizon->start();
-        $this->info('Started horizon');
+        $processes = [
+            'horizon' => [
+                'command' => ['php', 'artisan', 'horizon'],
+                'style' => ['cyan', null, ['bold']],
+            ],
+            'ngrok' => [
+                'command' => ['valet', 'share', '--domain=' . $ngrokUrl],
+                'style' => ['green', null, ['bold']],
+            ],
+            'reverb' => [
+                'command' => ['php', 'artisan', 'reverb:start', '--verbose', '--debug'],
+                'style' => ['magenta', null, ['bold']],
+            ],
+        ];
 
-        $this->info('Starting queue ngrok...');
-        $ngrok = new Process(['valet', 'share', '--domain=' . $ngrokUrl]);
-        $ngrok->start();
-        $this->info('Ngrok started on URL: https://' . $ngrokUrl);
-
-        $this->info('Starting reverb...');
-        $reverb = new Process(['php', 'artisan', 'reverb:start']);
-        $reverb->start();
-        $this->info('reverb started');
+        $processes = collect($processes)->mapWithKeys(function($input, $key) {
+            $this->info('Starting ' . $key);
+            $process = new Process($input['command']);
+            $style = new OutputFormatterStyle(...$input['style']);
+            $this->output->getFormatter()->setStyle($key, $style);
+            $process->start();
+            return [$key => $process];
+        });
 
         while (true) {
             if ($this->shouldExit) {
                 break;
             }
-            Sleep::for(3)->seconds();
+            $processes->each(function($process, $key) {
+                if ($process->isRunning()) {
+                    $output = $process->getIncrementalOutput();
+                    $errorOutput = $process->getIncrementalErrorOutput();
+                    if (!empty($output)) {
+                        $output = explode(PHP_EOL, $output);
+                        collect($output)->filter()->each(function($output) use ($key) {
+                            $this->line("<$key>$key</$key>: " . trim($output));
+                        });
+                    }
+                    if (!empty($errorOutput)) {
+                        $this->error(trim($errorOutput));
+                    }
+                }
+            });
+            Sleep::for(1)->seconds();
         }
 
-        if ($reverb->isRunning()) {
-            $reverb->signal(SIGINT);
-        }
-        if ($ngrok->isRunning()) {
-            $ngrok->signal(SIGINT);
-        }
-        if ($horizon->isRunning()) {
-            $horizon->signal(SIGINT);
-        }
+        $processes->each(function($process, $key) {
+            if ($process->isRunning()) {
+                $process->signal(SIGINT);
+            }
+        });
     }
 
     public function getSubscribedSignals(): array
