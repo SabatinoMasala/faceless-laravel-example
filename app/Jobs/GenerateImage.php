@@ -29,7 +29,17 @@ class GenerateImage implements ShouldQueue
      */
     public function handle(Replicate $replicate): void
     {
-        $prompt = new DescribeScene($this->story->content, $this->image->paragraph, $this->story->creative_direction);
+        /**
+         * This will output 'enriched' prompts like:
+         * Julius Caesar (Muscular build, strong jawline, piercing brown eyes, distinctive nose, laurel wreath on head, ornate armor with gold accents, crimson cape flowing behind him, commanding presence)
+         * standing on top of a battle-scarred landscape. (Rolling hills, scorched earth, charred trees, scattered bodies, abandoned shields and armor, eerie mist)
+         * In the background you see war horses (Muscular steeds with gleaming coats, flowing manes, determined eyes, carrying Roman soldiers into battle)
+         */
+        $prompt = new DescribeScene(
+            $this->story->content,
+            $this->image->paragraph,
+            $this->story->creative_direction
+        );
         $tokens = $replicate->run(config('models.llm'), [
             'prompt' => $prompt->get(),
         ]);
