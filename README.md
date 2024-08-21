@@ -27,6 +27,6 @@ The app should be available over the internet for Replicate to access it.
 
 ## Packages used
 
-- sabatinomasala/laravel-llm-prompt: This makes it easy to define LLM prompts.
-- sabatinomasala/replicate-php: This is a PHP client for the Replicate API with 'run' functionality.
-- sabatinomasala/dev-scripts-for-laravel: This makes it easy to run several services in parallel during development.
+- [sabatinomasala/laravel-llm-prompt](https://github.com/SabatinoMasala/laravel-llm-prompt/): This makes it easy to define LLM prompts.
+- [sabatinomasala/replicate-php](https://github.com/SabatinoMasala/replicate-php): This is a PHP client for the Replicate API with 'run' functionality.
+- [sabatinomasala/dev-scripts-for-laravel](https://github.com/SabatinoMasala/dev-scripts-for-laravel): This makes it easy to run several services in parallel during development.
