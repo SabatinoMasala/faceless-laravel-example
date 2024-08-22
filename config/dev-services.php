@@ -12,6 +12,7 @@ return [
             'style' => ['cyan', null, ['bold']],
             'logging' => true,
             'restart' => [
+                'logging' => false,
                 'watch' => [
                     '.env',
                     'app/Jobs/*'
