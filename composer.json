@@ -11,15 +11,16 @@
         "james-heinrich/getid3": "^1.9",
         "laravel/framework": "^11.21.0",
         "laravel/horizon": "^5.27",
+        "laravel/pail": "^1.1",
         "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "openai-php/client": "^0.10.1",
         "predis/predis": "^2.2",
         "remotion/lambda": "4.0.199",
+        "sabatinomasala/dev-scripts-for-laravel": "^1.0",
         "sabatinomasala/laravel-llm-prompt": "^1.0",
         "sabatinomasala/replicate-php": "^1.1",
-        "sabatinomasala/dev-scripts-for-laravel": "1.0.0",
         "tightenco/ziggy": "^2.0"
     },
     "require-dev": {
