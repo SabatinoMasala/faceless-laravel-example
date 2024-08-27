@@ -52,7 +52,9 @@ yarn start --props='{"json":"http:\/\/example.com\/story.json", "fps": 60}'
 ## Remotion Lambda
 
 Remotion has a built-in Lambda renderer that can be used to render videos in the cloud.
+
 Refer to the [Remotion documentation](https://www.remotion.dev/docs/lambda) for more information.
+
 After you've set up a Lambda, you can add the following environment variable to your `.env` file:
 ```
 REMOTION_APP_REGION=
