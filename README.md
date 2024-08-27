@@ -56,7 +56,7 @@ Refer to the [Remotion documentation](https://www.remotion.dev/docs/lambda) for 
 After you've set up a Lambda, you can add the following environment variable to your `.env` file:
 ```
 REMOTION_APP_REGION=
-# REMOTION_APP_FUNCTION_NAME=
+REMOTION_APP_FUNCTION_NAME=
 REMOTION_APP_SERVE_URL=
 ```
 
