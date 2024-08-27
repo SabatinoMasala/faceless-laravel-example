@@ -60,7 +60,7 @@ REMOTION_APP_FUNCTION_NAME=
 REMOTION_APP_SERVE_URL=
 ```
 
-This way, RenderVideo.php will use the Lambda to render the video instead of the local Remotion instance.
+This way, [RenderVideo.php](https://github.com/SabatinoMasala/faceless-laravel-example/blob/fd82dd76df8d6157c1d13070e28450316a4f14e3/app/Jobs/RenderVideo.php#L42) will use the Lambda to render the video instead of the local Remotion instance.
 
 ## Packages used
 
