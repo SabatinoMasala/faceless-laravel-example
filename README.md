@@ -2,6 +2,12 @@
 
 Generate faceless videos on autopilot using Laravel.
 
+## Video
+
+If you're a more visual learner, you can check out this video where I go over the entire project:
+
+[![Watch the video](https://i3.ytimg.com/vi/NiR15GyiMOA/maxresdefault.jpg)](https://youtu.be/NiR15GyiMOA)
+
 ## Getting started
 
 Run the following commands to get started:
