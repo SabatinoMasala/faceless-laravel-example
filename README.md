@@ -55,6 +55,8 @@ You can also control the FPS using the following parameter:
 yarn start --props='{"json":"http:\/\/example.com\/story.json", "fps": 60}'
 ```
 
+You may be required to obtain a Remotion license, refer to [their license file](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md) for more info.
+
 ## Remotion Lambda
 
 Remotion has a built-in Lambda renderer that can be used to render videos in the cloud.
