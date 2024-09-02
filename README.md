@@ -2,6 +2,12 @@
 
 Generate faceless videos on autopilot using Laravel.
 
+## Video
+
+If you're a more visual learner, you can check out this video where I go over the entire project:
+
+[![Watch the video](https://i3.ytimg.com/vi/NiR15GyiMOA/maxresdefault.jpg)](https://youtu.be/NiR15GyiMOA)
+
 ## Getting started
 
 Run the following commands to get started:
@@ -48,6 +54,8 @@ You can also control the FPS using the following parameter:
 ```
 yarn start --props='{"json":"http:\/\/example.com\/story.json", "fps": 60}'
 ```
+
+You may be required to obtain a Remotion license, refer to [their license file](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md) for more info.
 
 ## Remotion Lambda
 
