@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef47e8f86c420a19fd4d3533e72db4d",
+    "content-hash": "54714d79749dd77afea11f37f3340566",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5061,17 +5061,17 @@
             "time": "2024-08-15T08:16:18+00:00"
         },
         {
-            "name": "sabatinomasala/dev-scripts-for-laravel",
-            "version": "1.0.3",
+            "name": "sabatino/artisan-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/SabatinoMasala/dev-scripts-for-laravel.git",
-                "reference": "982fcab02c923d67f548dff0076cb4776bffbb5c"
+                "url": "https://github.com/SabatinoMasala/artisan-dev.git",
+                "reference": "ef2571fa7df7515f71c4ea81c011dcc8dfc22965"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SabatinoMasala/dev-scripts-for-laravel/zipball/982fcab02c923d67f548dff0076cb4776bffbb5c",
-                "reference": "982fcab02c923d67f548dff0076cb4776bffbb5c",
+                "url": "https://api.github.com/repos/SabatinoMasala/artisan-dev/zipball/ef2571fa7df7515f71c4ea81c011dcc8dfc22965",
+                "reference": "ef2571fa7df7515f71c4ea81c011dcc8dfc22965",
                 "shasum": ""
             },
             "require": {
@@ -5109,10 +5109,10 @@
                 "SabatinoMasala"
             ],
             "support": {
-                "issues": "https://github.com/SabatinoMasala/dev-scripts-for-laravel/issues",
-                "source": "https://github.com/SabatinoMasala/dev-scripts-for-laravel/tree/1.0.3"
+                "issues": "https://github.com/SabatinoMasala/artisan-dev/issues",
+                "source": "https://github.com/SabatinoMasala/artisan-dev/tree/1.0.0"
             },
-            "time": "2024-08-22T18:02:43+00:00"
+            "time": "2024-09-02T22:10:51+00:00"
         },
         {
             "name": "sabatinomasala/laravel-llm-prompt",
